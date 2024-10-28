@@ -40,31 +40,29 @@ namespace _Project.Scripts.Maths.Strategy
       
       MatchCollection matches = Regex.Matches(expressionString, pattern);
 
-      string operand1 = null;
-      string operand2 = null;
+      string[] operands = new string[2];
+      int index = 0;
+      
       string @operator = null;
       
       foreach (Match match in matches)
       {
         if (match.Groups[1].Success)
         {
-          if (!string.IsNullOrEmpty(operand1) && !string.IsNullOrEmpty(operand1))
+          if (index >= operands.Length)
           {
             Debug.LogError("More than 2 operands in expression");
             return new Expression();
           }
 
-          if(operand1 == null)
-            operand1 = match.Groups[1].Value;
-          
-          if(operand2 == null)
-            operand2 = match.Groups[1].Value;
+          operands[index] = match.Groups[1].Value;
+          index++;
         }
         else if (match.Groups[2].Success) 
           @operator = match.Groups[2].Value;
       }
 
-      return new Expression(operand1, @operator, operand2);
+      return new Expression(operands[1], @operator, operands[0]);
     }
 
     private MathCommand DefineMathCommand(Expression expression)

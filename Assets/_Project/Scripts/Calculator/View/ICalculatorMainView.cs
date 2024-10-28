@@ -6,5 +6,7 @@ namespace _Project.Scripts.Calculator.View
   {
     void Init(ICalculatorPresenter calculatorPresenter);
     void SetState(bool isOpen);
+    void SetInputExpression(string expression);
+    void SetHistory(string[] history);
   }
 }

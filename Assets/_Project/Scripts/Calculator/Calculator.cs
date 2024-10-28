@@ -31,6 +31,9 @@ namespace _Project.Scripts.Calculator
       _calculatorMainView = await _calculatorUIFactory.CreateCalculatorMainView();
       _calculatorModel.Init(_calculatorMainView);
       _calculatorMainView.Init(_calculatorPresenter);
+      
+      _calculatorPresenter.Init(OnErrorOccurred);
+      _calculatorPresenter.UpdateState();
     }
 
     public void OpenWindow() => 
