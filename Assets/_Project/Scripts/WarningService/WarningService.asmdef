@@ -1,13 +1,11 @@
 {
-    "name": "Application",
+    "name": "WarningService",
     "rootNamespace": "",
     "references": [
-        "GUID:858f885323d203b45b9d211a8e5a3f4a",
-        "GUID:0cdf6a96eec24f1bb36e6923f8d1ea01",
-        "GUID:f239319ab82712f4bbb4907d7dce9e87",
         "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
-        "GUID:f51ebe6a0ceec4240a699833d6309b23",
-        "GUID:b1830d16729fd1b46bcb7c4f0747c0ca"
+        "GUID:f239319ab82712f4bbb4907d7dce9e87",
+        "GUID:b1830d16729fd1b46bcb7c4f0747c0ca",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
