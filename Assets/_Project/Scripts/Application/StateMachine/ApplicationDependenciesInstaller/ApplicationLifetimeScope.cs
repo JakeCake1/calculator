@@ -1,6 +1,10 @@
 using _Project.Scripts.Application.StateMachine.Interfaces;
 using _Project.Scripts.Application.StateMachine.States;
 using _Project.Scripts.AssetProvider.Scripts;
+using _Project.Scripts.Calculator;
+using _Project.Scripts.Calculator.Factories;
+using _Project.Scripts.Calculator.Model;
+using _Project.Scripts.Calculator.Presenter;
 using _Project.Scripts.SaveDataService;
 using _Project.Scripts.SaveDataService.Interfaces;
 using _Project.Scripts.SaveDataService.SaveImplementations;
@@ -21,6 +25,7 @@ namespace _Project.Scripts.Application.StateMachine.ApplicationDependenciesInsta
 
       RegisterSaveService(builder);
       RegisterWarningService(builder);
+      RegisterCalculator(builder);
       RegisterEntryPoint(builder);
     }
 
@@ -40,6 +45,15 @@ namespace _Project.Scripts.Application.StateMachine.ApplicationDependenciesInsta
       builder.Register<IWarningService, WarningServiceLogic>(Lifetime.Singleton);
     }
     
+    private void RegisterCalculator(IContainerBuilder builder)
+    {
+      builder.Register<ICalculatorModel, CalculatorModel>(Lifetime.Singleton);
+      builder.Register<ICalculatorPresenter, CalculatorPresenter>(Lifetime.Singleton);
+      
+      builder.Register<ICalculatorUIFactory, CalculatorUIFactory>(Lifetime.Singleton);
+      builder.Register<ICalculator, Calculator.Calculator>(Lifetime.Singleton);
+    }
+
     private void RegisterEntryPoint(IContainerBuilder builder)
     {
       builder.RegisterEntryPoint<Bootstrapper>();

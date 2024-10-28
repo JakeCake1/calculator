@@ -1,7 +1,6 @@
 using _Project.Scripts.WarningService.Presenter;
 using UnityEngine;
 using UnityEngine.UI;
-using VContainer;
 
 namespace _Project.Scripts.WarningService.View
 {
@@ -17,11 +16,11 @@ namespace _Project.Scripts.WarningService.View
       Initialize();
     }
 
-    private void Initialize() => 
-      _okButton.onClick.AddListener(OnOkClicked);
-
     public void SetState(bool isOpen) => 
       gameObject.SetActive(isOpen);
+
+    private void Initialize() => 
+      _okButton.onClick.AddListener(OnOkClicked);
 
     private void OnOkClicked() => 
       _warningServicePresenter.SetState(false);
