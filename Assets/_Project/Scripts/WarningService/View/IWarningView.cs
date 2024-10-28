@@ -4,7 +4,7 @@ namespace _Project.Scripts.WarningService.View
 {
   public interface IWarningView
   {
-    void Construct(IWarningServicePresenter warningServicePresenter);
+    void Init(IWarningServicePresenter warningServicePresenter);
     void SetState(bool isOpen);
   }
 }

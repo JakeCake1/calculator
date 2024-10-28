@@ -11,7 +11,7 @@ namespace _Project.Scripts.WarningService.View
 
     [SerializeField] private Button _okButton;
     
-    public void Construct(IWarningServicePresenter warningServicePresenter)
+    public void Init(IWarningServicePresenter warningServicePresenter)
     {
       _warningServicePresenter = warningServicePresenter;
       Initialize();

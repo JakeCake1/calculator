@@ -9,32 +9,32 @@ namespace _Project.Scripts.WarningService
   public class WarningServiceLogic : IWarningService
   {
     private readonly IWarningUIFactory _warningUIFactory;
+
+    private readonly IWarningServicePresenter _warningServicePresenter;
+    private readonly IWarningServiceModel _warningServiceModel;
     
     private IWarningView _warningWindowView;
 
-    public WarningServiceLogic(IWarningUIFactory warningUIFactory)
+    public WarningServiceLogic(IWarningUIFactory warningUIFactory, 
+      IWarningServicePresenter warningServicePresenter, IWarningServiceModel warningServiceModel)
     {
+      _warningServiceModel = warningServiceModel;
+      _warningServicePresenter = warningServicePresenter;
       _warningUIFactory = warningUIFactory;
     }
     
     public async UniTask Initialize()
     {
       _warningWindowView = await _warningUIFactory.CreateWarningWindowView();
-
-      var warningServiceModel = new WarningServiceModel(_warningWindowView);
-      var warningServicePresenter = new WarningServicePresenter(warningServiceModel);
-
-      _warningWindowView.Construct(warningServicePresenter);
+      
+      _warningServiceModel.Init(_warningWindowView);
+      _warningWindowView.Init(_warningServicePresenter);
     }
 
-    public void OpenWindow()
-    {
+    public void OpenWindow() => 
       _warningWindowView.SetState(true);
-    }
 
-    public void Quit()
-    {
+    public void Quit() => 
       _warningUIFactory.ClearWarningWindowView();
-    }
   }
 }
