@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using _Project.Scripts.SaveDataService.Interfaces;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace _Project.Scripts.SaveDataService.Collections
@@ -15,8 +16,16 @@ namespace _Project.Scripts.SaveDataService.Collections
 
     private bool _isInitialized;
     
-    public PersistentStack(ISaveDataService saveDataService) => 
+    public PersistentStack(ISaveDataService saveDataService)
+    {
+      if (!(typeof(T) == typeof(int) || typeof(T) == typeof(float) || typeof(T) == typeof(bool) || typeof(T) == typeof(string)))
+      {
+        Debug.LogError("Type is not supported - supported types: int, float, bool, string");
+        return;
+      }
+      
       _saveDataService = saveDataService;
+    }
 
     ~PersistentStack() => 
       _isInitialized = false;
@@ -25,8 +34,9 @@ namespace _Project.Scripts.SaveDataService.Collections
     {
       _subFile = subFile;
       _key = key;
-      
-      _stack = JsonUtility.FromJson<Stack<T>>(_saveDataService.Get<string>(_subFile, _key)) ?? new Stack<T>();
+
+      string json = _saveDataService.Get<string>(_subFile, _key);
+      _stack = json != null ? JsonConvert.DeserializeObject<Stack<T>>(json) : new Stack<T>();
 
       _isInitialized = true;
     }
@@ -97,7 +107,9 @@ namespace _Project.Scripts.SaveDataService.Collections
 
     private void WriteStack()
     {
-      _saveDataService.Save(_subFile, _key, JsonUtility.ToJson(_stack));
+      string json = JsonConvert.SerializeObject(_stack);
+      
+      _saveDataService.Save(_subFile, _key, json);
       _saveDataService.Write();
     }
   }

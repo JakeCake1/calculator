@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace _Project.Scripts.SaveDataService.SaveImplementations
@@ -13,7 +14,7 @@ namespace _Project.Scripts.SaveDataService.SaveImplementations
     {
       string jsonKeyList = PlayerPrefs.GetString(PlayerPrefsKeys);
 
-      _keyList = JsonUtility.FromJson<List<string>>(jsonKeyList);
+      _keyList = JsonConvert.DeserializeObject<List<string>>(jsonKeyList);
 
       Dictionary<string, string> content = new Dictionary<string, string>();
 
@@ -35,7 +36,7 @@ namespace _Project.Scripts.SaveDataService.SaveImplementations
       if (!_keyList.Contains(fileKey))
       {
         _keyList.Add(fileKey);
-        PlayerPrefs.SetString(PlayerPrefsKeys, JsonUtility.ToJson(_keyList));
+        PlayerPrefs.SetString(PlayerPrefsKeys, JsonConvert.SerializeObject(_keyList));
       }
     }
   }
