@@ -43,16 +43,48 @@ namespace _Project.Scripts.SaveDataService
       _savedValues[subFile][key] = value;
 
     
-    public string GetString(string subFile, string key) =>
-      (string)_savedValues[subFile][key];
+    public string GetString(string subFile, string key)
+    {
+      if (!_savedValues.ContainsKey(subFile))
+        return "";
+      
+      if (!_savedValues[subFile].ContainsKey(key))
+        return "";
+      
+      return (string)_savedValues[subFile][key];
+    }
 
-    public int GetInt(string subFile, string key) =>
-      (int)_savedValues[subFile][key];
+    public int GetInt(string subFile, string key)
+    {
+      if (!_savedValues.ContainsKey(subFile))
+        return 0;
+      
+      if (!_savedValues[subFile].ContainsKey(key))
+        return 0;
+      
+      return (int)_savedValues[subFile][key];
+    }
 
-    public float GetFloat(string subFile, string key) =>
-      (float)_savedValues[subFile][key];
+    public float GetFloat(string subFile, string key)
+    {
+      if (!_savedValues.ContainsKey(subFile))
+        return 0;
+      
+      if (!_savedValues[subFile].ContainsKey(key))
+        return 0;
+      
+      return (float)_savedValues[subFile][key];
+    }
 
-    public bool GetBool(string subFile, string key) =>
-      (bool)_savedValues[subFile][key];
+    public bool GetBool(string subFile, string key)
+    {
+      if (!_savedValues.ContainsKey(subFile))
+        return false;
+      
+      if (!_savedValues[subFile].ContainsKey(key))
+        return false;
+      
+      return (bool)_savedValues[subFile][key];
+    }
   }
 }
