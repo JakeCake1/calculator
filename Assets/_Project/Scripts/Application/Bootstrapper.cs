@@ -14,6 +14,6 @@ namespace _Project.Scripts.Application
       _applicationStateMachine = applicationStateMachine;
 
     private void Start() => 
-      _applicationStateMachine.Enter<ApplicationState>();
+      _applicationStateMachine.Enter<StartupState>();
   }
 }
