@@ -26,7 +26,7 @@ namespace _Project.Scripts.SaveDataService.Collections
       _subFile = subFile;
       _key = key;
       
-      _stack = JsonUtility.FromJson<Stack<T>>(_saveDataService.GetString(_subFile, _key)) ?? new Stack<T>();
+      _stack = JsonUtility.FromJson<Stack<T>>(_saveDataService.Get<string>(_subFile, _key)) ?? new Stack<T>();
 
       _isInitialized = true;
     }
@@ -97,7 +97,7 @@ namespace _Project.Scripts.SaveDataService.Collections
 
     private void WriteStack()
     {
-      _saveDataService.SaveString(_subFile, _key, JsonUtility.ToJson(_stack));
+      _saveDataService.Save(_subFile, _key, JsonUtility.ToJson(_stack));
       _saveDataService.Write();
     }
   }

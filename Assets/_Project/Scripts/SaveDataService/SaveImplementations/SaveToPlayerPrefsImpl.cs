@@ -17,9 +17,13 @@ namespace _Project.Scripts.SaveDataService.SaveImplementations
 
       Dictionary<string, string> content = new Dictionary<string, string>();
 
-      if(_keyList != null)
+      if (_keyList != null)
+      {
         foreach (var key in _keyList)
           content.Add(key, PlayerPrefs.GetString(key));
+      }
+      else
+        _keyList = new List<string>();
 
       return content;
     }
