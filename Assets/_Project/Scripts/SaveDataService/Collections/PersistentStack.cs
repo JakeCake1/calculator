@@ -76,6 +76,14 @@ namespace _Project.Scripts.SaveDataService.Collections
       return _stack.Count;
     }
 
+    public T[] ToArray()
+    { 
+      if (IsInitialized()) 
+        return default;
+      
+      return _stack.ToArray();
+    }
+
     private bool IsInitialized()
     {
       if (!_isInitialized)
