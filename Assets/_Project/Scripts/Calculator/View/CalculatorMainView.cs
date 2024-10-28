@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using _Project.Scripts.Calculator.Presenter;
 using UnityEngine;
 
@@ -12,5 +13,25 @@ namespace _Project.Scripts.Calculator.View
 
     public void SetState(bool isOpen) => 
       gameObject.SetActive(isOpen);
+    
+    public void SetInputExpression(string expression)
+    {
+      
+    }
+    
+    public void SetHistory(Stack<string> history)
+    {
+      
+    }
+
+    private void OnInputValueChanged(string value)
+    {
+      
+    }
+
+    private void OnResultClicked()
+    {
+      
+    }
   }
 }
