@@ -1,4 +1,5 @@
 using _Project.Scripts.Calculator.View;
+using _Project.Scripts.Maths.Command;
 using _Project.Scripts.SaveDataService.Collections;
 using _Project.Scripts.SaveDataService.Interfaces;
 
@@ -11,13 +12,13 @@ namespace _Project.Scripts.Calculator.Model
     private ICalculatorMainView _calculatorMainView;
 
     private string _inputExpression;
-    private readonly PersistentStack<string> _history;
+    private readonly PersistentStack<MathCommand> _history;
 
     public CalculatorModel(ISaveDataService saveDataService)
     {
       _saveDataService = saveDataService;
       
-      _history = new PersistentStack<string>(saveDataService);
+      _history = new PersistentStack<MathCommand>(saveDataService);
       _history.Load("General", "CommandsHistory");
     }
     
@@ -31,7 +32,7 @@ namespace _Project.Scripts.Calculator.Model
       _inputExpression = _saveDataService.GetString("General", "CommandInput");
     }
     
-    public void AddSolution(string solution)
+    public void AddSolution(MathCommand solution)
     {
       _history.Push(solution);
     }
@@ -39,12 +40,14 @@ namespace _Project.Scripts.Calculator.Model
     public void SetInputExpression(string expression)
     {
       _inputExpression = expression;
+      
       _saveDataService.SaveString("General", "CommandInput",expression);
+      _saveDataService.Write();
     }
 
     public void SetHistory()
     {
-      string[] strings = _history.ToArray();
+      MathCommand[] commands = _history.ToArray();
     }
   }
 }
