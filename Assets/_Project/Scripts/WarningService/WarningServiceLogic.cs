@@ -1,4 +1,6 @@
 using _Project.Scripts.WarningService.Factories;
+using _Project.Scripts.WarningService.Model;
+using _Project.Scripts.WarningService.Presenter;
 using _Project.Scripts.WarningService.View;
 using Cysharp.Threading.Tasks;
 
@@ -18,6 +20,11 @@ namespace _Project.Scripts.WarningService
     public async UniTask Initialize()
     {
       _warningWindowView = await _warningUIFactory.CreateWarningWindowView();
+
+      var warningServiceModel = new WarningServiceModel(_warningWindowView);
+      var warningServicePresenter = new WarningServicePresenter(warningServiceModel);
+
+      _warningWindowView.Construct(warningServicePresenter);
     }
 
     public void OpenWindow()
