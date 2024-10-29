@@ -23,7 +23,7 @@ namespace _Project.Scripts.Maths.Wrapper
       else
       {
         command = null;
-        Debug.LogError("Expression form is not valid");
+        Debug.LogWarning("Expression form is not valid");
       }
 
       return command != null;

@@ -8,6 +8,7 @@ namespace _Project.Scripts.Calculator.Model
     void Init(ICalculatorMainView calculatorMainView);
     void UpdateState();
     void AddSolution(MathCommand solution);
+    void AddErrorSolution(string expression);
     void SetInputExpression(string expression);
   }
 }

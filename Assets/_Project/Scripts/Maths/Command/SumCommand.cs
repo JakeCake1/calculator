@@ -10,7 +10,7 @@ namespace _Project.Scripts.Maths.Command
       int operand1 = int.Parse(expression.Operand1);
       int operand2 = int.Parse(expression.Operand2);
 
-      return $"{operand1} + {operand2} = {operand1 + operand2}";
+      return $"{operand1}+{operand2}={operand1 + operand2}";
     }
   }
 }

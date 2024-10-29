@@ -32,7 +32,10 @@ namespace _Project.Scripts.Calculator.Presenter
       if(_maths.TryExecuteExpression(expression, out MathCommand mathCommand))
         _calculatorModel.AddSolution(mathCommand);
       else
+      {
+        _calculatorModel.AddErrorSolution(expression);
         _onErrorOccurred?.Invoke();
+      }
     }
   }
 }

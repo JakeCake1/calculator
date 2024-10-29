@@ -62,7 +62,7 @@ namespace _Project.Scripts.Maths.Strategy
     {
       if (!expression.IsValid())
       {
-        Debug.LogError("Expression is not valid");
+        Debug.LogWarning("Expression is not valid");
         return true;
       }
 
@@ -70,7 +70,7 @@ namespace _Project.Scripts.Maths.Strategy
     }
 
     private void LogExpressionError() => 
-      Debug.LogError("Math command for expression not found");
+      Debug.LogWarning("Math command for expression not found");
   }
 }
 

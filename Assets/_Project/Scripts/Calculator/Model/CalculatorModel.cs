@@ -42,6 +42,12 @@ namespace _Project.Scripts.Calculator.Model
       UpdateHistory();
     }
 
+    public void AddErrorSolution(string expression)
+    {
+      _history.Push($"{expression}=Error");
+      UpdateHistory();
+    }
+
     public void SetInputExpression(string expression)
     {
       _inputExpression = expression;
