@@ -1,4 +1,3 @@
-using System.Linq;
 using _Project.Scripts.Calculator.View;
 using _Project.Scripts.Maths.Command;
 using _Project.Scripts.SaveDataService.Collections;

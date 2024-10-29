@@ -1,7 +1,7 @@
 using System;
-using System.Text.RegularExpressions;
 using _Project.Scripts.Maths.Command;
 using _Project.Scripts.Maths.Data;
+using _Project.Scripts.Maths.Factory;
 using UnityEngine;
 
 namespace _Project.Scripts.Maths.Strategy
@@ -9,13 +9,17 @@ namespace _Project.Scripts.Maths.Strategy
   public class CommandExecutionStrategy : ICommandExecutionStrategy
   {
     private readonly IAvailableMathCommands _availableMathCommands;
+    private readonly IExpressionFactory _expressionFactory;
 
-    public CommandExecutionStrategy(IAvailableMathCommands availableMathCommands) => 
+    public CommandExecutionStrategy(IAvailableMathCommands availableMathCommands, IExpressionFactory expressionFactory)
+    {
+      _expressionFactory = expressionFactory;
       _availableMathCommands = availableMathCommands;
+    }
 
     public void TrySolveExpression(string expressionString, out MathCommand mathCommand)
     {
-      Expression expression = SeparateExpressionByOperators(expressionString);
+      Expression expression = _expressionFactory.CreateExpression(expressionString, _availableMathCommands);
 
       if (CheckExpressionForValid(expression))
       {
@@ -28,42 +32,6 @@ namespace _Project.Scripts.Maths.Strategy
       ExecuteMathCommand(expression, mathCommand);
     }
 
-    private Expression SeparateExpressionByOperators(string expressionString)
-    {
-      string operations = "";
-      
-      foreach (var command in _availableMathCommands.GetCommandsKeys()) 
-        operations += command;
-      
-      string pattern = $@"(\d+)|([{operations}])";
-      
-      MatchCollection matches = Regex.Matches(expressionString, pattern);
-
-      string[] operands = new string[2];
-      int index = 0;
-      
-      string @operator = null;
-      
-      foreach (Match match in matches)
-      {
-        if (match.Groups[1].Success)
-        {
-          if (index >= operands.Length)
-          {
-            Debug.LogError("More than 2 operands in expression");
-            return new Expression();
-          }
-
-          operands[index] = match.Groups[1].Value;
-          index++;
-        }
-        else if (match.Groups[2].Success) 
-          @operator = match.Groups[2].Value;
-      }
-
-      return new Expression(operands[1], @operator, operands[0]);
-    }
-
     private MathCommand DefineMathCommand(Expression expression)
     {
       if(_availableMathCommands.TryGetValue(expression.Operator, out Type mathOperationType))
@@ -72,7 +40,7 @@ namespace _Project.Scripts.Maths.Strategy
         return command;
       }
 
-      Debug.LogError("Math command for expression not found");
+      LogExpressionError();
       return null;
     }
 
@@ -83,13 +51,13 @@ namespace _Project.Scripts.Maths.Strategy
 
       if (command == null)
       {
-        Debug.LogError("Math command for expression not found");
+        LogExpressionError();
         return;
       }
       
       command.Execute(expression);
     }
-
+    
     private bool CheckExpressionForValid(Expression expression)
     {
       if (!expression.IsValid())
@@ -100,6 +68,9 @@ namespace _Project.Scripts.Maths.Strategy
 
       return false;
     }
+
+    private void LogExpressionError() => 
+      Debug.LogError("Math command for expression not found");
   }
 }
 

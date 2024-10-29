@@ -21,8 +21,6 @@ namespace _Project.Scripts.Application.StateMachine.States
 
     public async void Enter()
     {
-      Debug.Log("Enter ApplicationState");
-
       _calculator.OnErrorOccurred += OpenWarningWindow;
       _warningService.OnCloseWindow += ActivateCalculatorView;
       
@@ -39,8 +37,6 @@ namespace _Project.Scripts.Application.StateMachine.States
 
       _warningService.Quit();
       _calculator.Quit();
-      
-      Debug.Log("Exit ApplicationState");
     }
 
     private void ActivateCalculatorView() => 

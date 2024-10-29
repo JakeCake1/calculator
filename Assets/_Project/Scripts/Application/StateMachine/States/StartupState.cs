@@ -18,13 +18,11 @@ namespace _Project.Scripts.Application.StateMachine.States
 
     public void Enter()
     {
-      Debug.Log("Enter StartupState");
-      
       _saveDataService.Load();
       _applicationStateMachine.Enter<ApplicationState>();
     }
 
-    public void Exit() => 
-      Debug.Log("Exit StartupState");
+    public void Exit()
+    { }
   }
 }
