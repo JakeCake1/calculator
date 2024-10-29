@@ -11,18 +11,18 @@
 3. Нажать Play
 
 Основной скрипт для запуска: Bootstrapper.cs
-Из него можно начать изучать проект и зависимости
+<br/>Из него можно начать изучать проект и зависимости
 
 ## Документация
 
 Подробный обзор решения можно посмотреть с помощью UML диаграммы:
-Документация Doxygen:
+<br/>Документация Doxygen:
 
 ## Дополнительно
 
 Дополнительно через PackageManager установлены зависимости:
 
 UniTask
-Addressables
-VContainer
-Newtonsoft Json
+<br/>Addressables
+<br/>VContainer
+<br/>Newtonsoft Json
