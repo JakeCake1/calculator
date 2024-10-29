@@ -28,8 +28,9 @@ namespace _Project.Scripts.Maths.Strategy
       }
 
       mathCommand = DefineMathCommand(expression);
-      
-      ExecuteMathCommand(expression, mathCommand);
+
+      if (!ExecuteMathCommand(expression, mathCommand)) 
+        mathCommand = null;
     }
 
     private MathCommand DefineMathCommand(Expression expression)
@@ -44,18 +45,18 @@ namespace _Project.Scripts.Maths.Strategy
       return null;
     }
 
-    private void ExecuteMathCommand(Expression expression, MathCommand command)
+    private bool ExecuteMathCommand(Expression expression, MathCommand command)
     {
       if (CheckExpressionForValid(expression))
-        return;
+        return false;
 
       if (command == null)
       {
         LogExpressionError();
-        return;
+        return false;
       }
-      
-      command.Execute(expression);
+
+      return command.Execute(expression);
     }
     
     private bool CheckExpressionForValid(Expression expression)

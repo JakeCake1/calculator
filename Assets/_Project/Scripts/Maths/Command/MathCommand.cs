@@ -9,9 +9,14 @@ namespace _Project.Scripts.Maths.Command
     public string GetResult() => 
       _result;
 
-    public void Execute(Expression expression) => 
-      _result = Solve(expression);
+    public bool Execute(Expression expression)
+    {
+      bool solveIsSuccessful = Solve(expression, out string result);
+      _result = result;
 
-    protected abstract string Solve(Expression expression);
+      return solveIsSuccessful;
+    }
+
+    protected abstract bool Solve(Expression expression, out string answer);
   }
 }
