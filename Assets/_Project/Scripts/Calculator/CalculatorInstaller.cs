@@ -10,11 +10,11 @@ namespace _Project.Scripts.Calculator
   {
     public void Install(IContainerBuilder builder)
     {
-      builder.Register<ICalculatorModel, CalculatorModel>(Lifetime.Singleton);
-      builder.Register<ICalculatorPresenter, CalculatorPresenter>(Lifetime.Singleton);
+      builder.Register<ICalculatorModel, CalculatorModel>(Lifetime.Scoped);
+      builder.Register<ICalculatorPresenter, CalculatorPresenter>(Lifetime.Scoped);
       
-      builder.Register<ICalculatorUIFactory, CalculatorUIFactory>(Lifetime.Singleton);
-      builder.Register<ICalculator, Calculator>(Lifetime.Singleton);
+      builder.Register<ICalculatorUIFactory, CalculatorUIFactory>(Lifetime.Scoped);
+      builder.Register<ICalculator, Calculator>(Lifetime.Scoped);
     }
   }
 }

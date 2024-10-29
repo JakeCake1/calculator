@@ -11,12 +11,12 @@ namespace _Project.Scripts.Maths
   {
     public void Install(IContainerBuilder builder)
     {
-      builder.Register<IExpressionFactory, ExpressionFactory>(Lifetime.Singleton);
-      builder.Register<IAvailableMathCommands, AvailableMathCommands>(Lifetime.Singleton);
-      builder.Register<ICommandExecutionStrategy, CommandExecutionStrategy>(Lifetime.Singleton);
-      builder.Register<ICommandValidationWrapper, CommandValidationWrapper>(Lifetime.Singleton);
+      builder.Register<IExpressionFactory, ExpressionFactory>(Lifetime.Scoped);
+      builder.Register<IAvailableMathCommands, AvailableMathCommands>(Lifetime.Scoped);
+      builder.Register<ICommandExecutionStrategy, CommandExecutionStrategy>(Lifetime.Scoped);
+      builder.Register<ICommandValidationWrapper, CommandValidationWrapper>(Lifetime.Scoped);
 
-      builder.Register<IMaths, Maths>(Lifetime.Singleton);
+      builder.Register<IMaths, Maths>(Lifetime.Scoped);
     }
   }
 }

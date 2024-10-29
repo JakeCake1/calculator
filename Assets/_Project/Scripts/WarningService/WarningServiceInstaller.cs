@@ -10,11 +10,11 @@ namespace _Project.Scripts.WarningService
   {
     public void Install(IContainerBuilder builder)
     {
-      builder.Register<IWarningServiceModel, WarningServiceModel>(Lifetime.Singleton);
-      builder.Register<IWarningServicePresenter, WarningServicePresenter>(Lifetime.Singleton);
+      builder.Register<IWarningServiceModel, WarningServiceModel>(Lifetime.Scoped);
+      builder.Register<IWarningServicePresenter, WarningServicePresenter>(Lifetime.Scoped);
       
-      builder.Register<IWarningUIFactory, WarningUIFactory>(Lifetime.Singleton);
-      builder.Register<IWarningService, WarningServiceLogic>(Lifetime.Singleton);
+      builder.Register<IWarningUIFactory, WarningUIFactory>(Lifetime.Scoped);
+      builder.Register<IWarningService, WarningServiceLogic>(Lifetime.Scoped);
     }
   }
 }
