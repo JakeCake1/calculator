@@ -7,19 +7,29 @@ namespace _Project.Scripts.Calculator.Model
 {
   public class CalculatorModel : ICalculatorModel
   {
+    private const string CommandsHistoryKey = "CommandsHistory";
+    private const string CommandInputKey = "CommandInput";
+
+    private const string SubFileKey = "General";
+
+    private const int HistoryMaxCapacity = 20;
+    
+    private readonly PersistentStack<string> _history;
+
     private readonly ISaveDataService _saveDataService;
 
     private ICalculatorMainView _calculatorMainView;
 
     private string _inputExpression;
-    private readonly PersistentStack<string> _history;
 
     public CalculatorModel(ISaveDataService saveDataService)
     {
       _saveDataService = saveDataService;
-      
+
       _history = new PersistentStack<string>(saveDataService);
-      _history.Load("General", "CommandsHistory");
+      _history.SetMaxCapacity(HistoryMaxCapacity);
+
+      _history.Load(SubFileKey, CommandsHistoryKey);
     }
 
     public void Init(ICalculatorMainView calculatorMainView) => 
@@ -27,8 +37,8 @@ namespace _Project.Scripts.Calculator.Model
 
     public void UpdateState()
     {
-      _inputExpression = _saveDataService.Get<string>("General", "CommandInput");
-      
+      _inputExpression = _saveDataService.Get<string>(SubFileKey, CommandInputKey);
+
       UpdateHistory();
       _calculatorMainView.SetInputExpression(_inputExpression);
     }
@@ -52,7 +62,7 @@ namespace _Project.Scripts.Calculator.Model
     {
       _inputExpression = expression;
 
-      _saveDataService.Save("General", "CommandInput", expression);
+      _saveDataService.Save(SubFileKey, CommandInputKey, expression);
       _saveDataService.Write();
     }
 

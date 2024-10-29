@@ -7,15 +7,16 @@ namespace _Project.Scripts.SaveDataService.Collections
 {
   public sealed class PersistentStack<T>
   {
-    private Stack<T> _stack;
-    
     private readonly ISaveDataService _saveDataService;
-    
-    private string _subFile;
-    private string _key;
 
     private bool _isInitialized;
-    
+    private string _key;
+
+    private int _maxCapacity = int.MaxValue;
+    private Stack<T> _stack;
+
+    private string _subFile;
+
     public PersistentStack(ISaveDataService saveDataService)
     {
       if (!(typeof(T) == typeof(int) || typeof(T) == typeof(float) || typeof(T) == typeof(bool) || typeof(T) == typeof(string)))
@@ -23,38 +24,49 @@ namespace _Project.Scripts.SaveDataService.Collections
         Debug.LogError("Type is not supported - supported types: int, float, bool, string");
         return;
       }
-      
+
       _saveDataService = saveDataService;
     }
 
     ~PersistentStack() => 
       _isInitialized = false;
-    
+
+    public void SetMaxCapacity(int maxCapacity) => 
+      _maxCapacity = maxCapacity;
+
     public void Load(string subFile, string key)
     {
       _subFile = subFile;
       _key = key;
 
-      string json = _saveDataService.Get<string>(_subFile, _key);
+      var json = _saveDataService.Get<string>(_subFile, _key);
       _stack = json != null ? JsonConvert.DeserializeObject<Stack<T>>(json) : new Stack<T>();
 
+      Reverse(_stack);
+      
       _isInitialized = true;
     }
 
     public void Push(T obj)
     {
-      if (IsInitialized()) 
+      if (IsInitialized())
         return;
+
+      if (_stack.Count >= _maxCapacity)
+      {
+        Debug.LogWarning("Reached maximum for persistent stack - last value will be replaced");
+        _stack.Pop();
+      }
 
       _stack.Push(obj);
       WriteStack();
     }
 
     public T Pop()
-    {   
-      if (IsInitialized()) 
+    {
+      if (IsInitialized())
         return default;
-      
+
       T pop = _stack.Pop();
       WriteStack();
 
@@ -62,35 +74,35 @@ namespace _Project.Scripts.SaveDataService.Collections
     }
 
     public void Clear()
-    {   
-      if (IsInitialized()) 
+    {
+      if (IsInitialized())
         return;
-      
+
       _stack.Clear();
       WriteStack();
     }
 
     public T Peek()
-    {   
-      if (IsInitialized()) 
+    {
+      if (IsInitialized())
         return default;
-      
+
       return _stack.Peek();
     }
 
     public int Count()
-    {  
-      if (IsInitialized()) 
+    {
+      if (IsInitialized())
         return default;
-      
+
       return _stack.Count;
     }
 
     public T[] ToArray()
-    { 
-      if (IsInitialized()) 
+    {
+      if (IsInitialized())
         return default;
-      
+
       return _stack.ToArray();
     }
 
@@ -108,9 +120,20 @@ namespace _Project.Scripts.SaveDataService.Collections
     private void WriteStack()
     {
       string json = JsonConvert.SerializeObject(_stack);
-      
+
       _saveDataService.Save(_subFile, _key, json);
       _saveDataService.Write();
+    }
+
+    private void Reverse(Stack<T> stack)
+    {
+      T[] list = new T[stack.Count];
+
+      for (int i = 0; i < list.Length; i++) 
+        list[i] = stack.Pop();
+
+      for (var index = 0; index < list.Length; index++) 
+        stack.Push(list[index]);
     }
   }
 }
