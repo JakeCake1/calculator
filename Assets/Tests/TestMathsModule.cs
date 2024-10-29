@@ -25,6 +25,7 @@ namespace Tests
       Object.DestroyImmediate(_lifetimeScope.gameObject);
 
     [TestCase("5+5", "5+5=10")]
+    [TestCase("10+10.0", "10+10.0=Error")]
     [TestCase("8+154", "8+154=162")]
     [TestCase("5+5=", "5+5==Error")]
     [TestCase("-5+5", "-5+5=Error")]
