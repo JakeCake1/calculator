@@ -36,8 +36,8 @@ namespace _Project.Scripts.Calculator
       _calculatorPresenter.UpdateState();
     }
 
-    public void OpenWindow() => 
-      _calculatorMainView.SetState(true);
+    public void SetActive(bool isActive) => 
+      _calculatorMainView.SetState(isActive);
 
     public void Quit() => 
       _calculatorUIFactory.ClearCalculatorMainView();

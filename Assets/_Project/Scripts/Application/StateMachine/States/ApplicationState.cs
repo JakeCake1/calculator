@@ -23,19 +23,33 @@ namespace _Project.Scripts.Application.StateMachine.States
     {
       Debug.Log("Enter ApplicationState");
 
-      _calculator.OnErrorOccurred += _warningService.OpenWindow;
+      _calculator.OnErrorOccurred += OpenWarningWindow;
+      _warningService.OnCloseWindow += ActivateCalculatorView;
       
-      await _calculator.Initialize();
+      await _calculator.Initialize(); 
       await _warningService.Initialize();
 
-      _calculator.OpenWindow();
+      ActivateCalculatorView();
     }
 
     public void Exit()
     {
-      _calculator.OnErrorOccurred -= _warningService.OpenWindow;
+      _calculator.OnErrorOccurred -= OpenWarningWindow;
+      _warningService.OnCloseWindow -= ActivateCalculatorView;
 
+      _warningService.Quit();
+      _calculator.Quit();
+      
       Debug.Log("Exit ApplicationState");
+    }
+
+    private void ActivateCalculatorView() => 
+      _calculator.SetActive(true);
+
+    private void OpenWarningWindow()
+    {
+      _warningService.OpenWindow();
+      _calculator.SetActive(false);
     }
   }
 }

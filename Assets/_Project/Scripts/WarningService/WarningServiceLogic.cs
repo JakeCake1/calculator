@@ -1,3 +1,4 @@
+using System;
 using _Project.Scripts.WarningService.Factories;
 using _Project.Scripts.WarningService.Model;
 using _Project.Scripts.WarningService.Presenter;
@@ -15,6 +16,8 @@ namespace _Project.Scripts.WarningService
     
     private IWarningView _warningWindowView;
 
+    public event Action OnCloseWindow;
+
     public WarningServiceLogic(IWarningUIFactory warningUIFactory, 
       IWarningServicePresenter warningServicePresenter, IWarningServiceModel warningServiceModel)
     {
@@ -22,12 +25,12 @@ namespace _Project.Scripts.WarningService
       _warningServicePresenter = warningServicePresenter;
       _warningUIFactory = warningUIFactory;
     }
-    
+
     public async UniTask Initialize()
-    {
+    {   
       _warningWindowView = await _warningUIFactory.CreateWarningWindowView();
-      
-      _warningServiceModel.Init(_warningWindowView);
+
+      _warningServiceModel.Init(_warningWindowView, OnCloseWindow);
       _warningWindowView.Init(_warningServicePresenter);
     }
 

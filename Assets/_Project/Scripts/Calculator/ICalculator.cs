@@ -7,7 +7,7 @@ namespace _Project.Scripts.Calculator
   {
     event Action OnErrorOccurred;
     UniTask Initialize();
-    void OpenWindow();
+    void SetActive(bool isActive);
     void Quit();
   }
 }
