@@ -6,6 +6,7 @@ using _Project.Scripts.Calculator.Factories;
 using _Project.Scripts.Calculator.Model;
 using _Project.Scripts.Calculator.Presenter;
 using _Project.Scripts.Maths;
+using _Project.Scripts.Maths.Data;
 using _Project.Scripts.Maths.Strategy;
 using _Project.Scripts.Maths.Wrapper;
 using _Project.Scripts.SaveDataService;
@@ -51,6 +52,7 @@ namespace _Project.Scripts.Application.StateMachine.ApplicationDependenciesInsta
     
     private void RegisterMaths(IContainerBuilder builder)
     {
+      builder.Register<IAvailableMathCommands, AvailableMathCommands>(Lifetime.Singleton);
       builder.Register<ICommandExecutionStrategy, CommandExecutionStrategy>(Lifetime.Singleton);
       builder.Register<ICommandValidationWrapper, CommandValidationWrapper>(Lifetime.Singleton);
 

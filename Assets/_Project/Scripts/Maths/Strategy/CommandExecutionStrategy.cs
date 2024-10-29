@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using _Project.Scripts.Maths.Command;
 using _Project.Scripts.Maths.Data;
@@ -9,10 +8,10 @@ namespace _Project.Scripts.Maths.Strategy
 {
   public class CommandExecutionStrategy : ICommandExecutionStrategy
   {
-    private readonly Dictionary<string, Type> _availableCommands = new()
-    {
-      {"+", typeof(SumCommand)}
-    };
+    private readonly IAvailableMathCommands _availableMathCommands;
+
+    public CommandExecutionStrategy(IAvailableMathCommands availableMathCommands) => 
+      _availableMathCommands = availableMathCommands;
 
     public void TrySolveExpression(string expressionString, out MathCommand mathCommand)
     {
@@ -33,8 +32,8 @@ namespace _Project.Scripts.Maths.Strategy
     {
       string operations = "";
       
-      foreach (var command in _availableCommands) 
-        operations += command.Key;
+      foreach (var command in _availableMathCommands.GetCommandsKeys()) 
+        operations += command;
       
       string pattern = $@"(\d+)|([{operations}])";
       
@@ -67,7 +66,7 @@ namespace _Project.Scripts.Maths.Strategy
 
     private MathCommand DefineMathCommand(Expression expression)
     {
-      if(_availableCommands.TryGetValue(expression.Operator, out Type mathOperationType))
+      if(_availableMathCommands.TryGetValue(expression.Operator, out Type mathOperationType))
       {
         MathCommand command = (MathCommand) Activator.CreateInstance(mathOperationType);
         return command;
