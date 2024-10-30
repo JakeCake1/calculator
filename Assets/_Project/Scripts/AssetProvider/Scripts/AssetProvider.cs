@@ -17,7 +17,7 @@ namespace _Project.Scripts.AssetProvider.Scripts
     /// \brief Метод загрузки ресурса через Addressables
     /// \param address Адресс указывающий на объект ресурса, который нужно загрузить в память
     /// \param T - тип ресурса
-    /// \return UniTask который можно подождать до завершения процесса запгрузки ресурса
+    /// \return UniTask который можно подождать до завершения процесса загрузки ресурса
     public async UniTask<T> Load<T>(string address) where T : class
     {
       if (_completeCache.TryGetValue(address, out AsyncOperationHandle completedHandle))
