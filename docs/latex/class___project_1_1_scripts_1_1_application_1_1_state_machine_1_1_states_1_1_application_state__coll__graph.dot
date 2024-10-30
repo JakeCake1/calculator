@@ -1,0 +1,19 @@
+digraph "_Project.Scripts.Application.StateMachine.States.ApplicationState"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="_Project.Scripts.Application.\lStateMachine.States.ApplicationState",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Класс-состояние, отвечающий за основную логику в приложении"];
+  Node2 -> Node1 [id="edge6_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="IApplicationState",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_interfaces_1_1_i_application_state.html",tooltip="Интерфейс, описывающий вход в состояние приложения"];
+  Node3 -> Node2 [id="edge7_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="IApplicationExitableState",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_interfaces_1_1_i_application_exitable_state.html",tooltip="Интерфейс, описывающий выход из состояния приложения"];
+  Node4 -> Node1 [id="edge8_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _warningService",fontcolor="grey" ];
+  Node4 [id="Node000004",label="_Project.Scripts.Warning\lService.IWarningService",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service.html",tooltip="Интерфейс, отвечающий за появление окна-предупреждения"];
+  Node5 -> Node1 [id="edge9_Node000001_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _calculator",fontcolor="grey" ];
+  Node5 [id="Node000005",label="_Project.Scripts.Calculator.\lICalculator",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_calculator_1_1_i_calculator.html",tooltip="Класс, отвечающий за взаимодействие с логикой калькулятора"];
+  Node6 -> Node1 [id="edge10_Node000001_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _applicationLifetimeScope",fontcolor="grey" ];
+  Node6 [id="Node000006",label="_Project.Scripts.Application.\lStateMachine.ApplicationDependencies\lInstaller.ApplicationLifetimeScope",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_dependencies_insta0526825eb3b1946d5e5a860ee151471b.html",tooltip="Класс, отвечающий за инъекцию сервисов в приложении"];
+}

@@ -1,0 +1,159 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Calculator\+Main\+View Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view}{}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view}\index{\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}}
+
+
+Класс, описывающий вид калькулятора  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Calculator\+Main\+View\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Calculator\+Main\+View\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a2b52f6fe49ebde8baf7a240001f1013c}{Init}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter}{ICalculator\+Presenter}} calculator\+Presenter)
+\begin{DoxyCompactList}\small\item\em Метод инициализации вида калькулятора \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a4253e0aaadfee4444bd13e5aa0fd4e40}{Set\+State}} (bool is\+Open)
+\begin{DoxyCompactList}\small\item\em Метод активации/скрытия вида калькулятора \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a4563a3a6b99ef07ff5122f89ec1c71c6}{Set\+Input\+Expression}} (string expression)
+\begin{DoxyCompactList}\small\item\em Метод записи выражения в строку ввода \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a1fe05975f0c70e8ee2e985a9b117b3e6}{Set\+History}} (string\mbox{[}$\,$\mbox{]} history)
+\begin{DoxyCompactList}\small\item\em Метод записи истории математических вычислений в скролл UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_view_1_1_i_calculator_main_view}{\+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+ICalculator\+Main\+View}}}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a413e90932002b47754540d31a1009a59}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a413e90932002b47754540d31a1009a59} 
+void {\bfseries Initialize} ()
+\begin{DoxyCompactList}\small\item\em Инициализация пользовательского ввода в UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a69403f4f9f31f570b3762e55b31bb263}{On\+Input\+Value\+Changed}} (string value)
+\begin{DoxyCompactList}\small\item\em Метод, отлавливающий изменения данных при вводе в строку \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a115f77cf15ec039c25ec7a6a14cd0860}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a115f77cf15ec039c25ec7a6a14cd0860} 
+void {\bfseries On\+Result\+Clicked} ()
+\begin{DoxyCompactList}\small\item\em Метод, отправляющий выражение в решение при нажатии на кнопку Result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a56bb72dc06ff2c42d88cd333d0a69fb7}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a56bb72dc06ff2c42d88cd333d0a69fb7} 
+\mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter}{ICalculator\+Presenter}} {\bfseries \+\_\+calculator\+Presenter}
+\begin{DoxyCompactList}\small\item\em Презентер калькулятора \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_afa44db5c8f0a941a515d9e345819990b}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_afa44db5c8f0a941a515d9e345819990b} 
+TMP\+\_\+\+Text {\bfseries \+\_\+history\+Text}
+\begin{DoxyCompactList}\small\item\em Текст-\/компонент истории математических операций \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a4100dccb82ac8504b33794d8f4682332}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a4100dccb82ac8504b33794d8f4682332} 
+TMP\+\_\+\+Input\+Field {\bfseries \+\_\+input\+Field}
+\begin{DoxyCompactList}\small\item\em Текст-\/компонент ввода выражения \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_ac5c13aace2ec29b4f3d7d89b69b3e101}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_ac5c13aace2ec29b4f3d7d89b69b3e101} 
+Button {\bfseries \+\_\+result\+Button}
+\begin{DoxyCompactList}\small\item\em Кнопка-\/компонент вывода результата вычисления \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, описывающий вид калькулятора 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a2b52f6fe49ebde8baf7a240001f1013c}\index{\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}!Init@{Init}}
+\index{Init@{Init}!\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a2b52f6fe49ebde8baf7a240001f1013c} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Calculator\+Main\+View.\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter}{ICalculator\+Presenter}}}]{calculator\+Presenter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод инициализации вида калькулятора 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calculator\+Presenter} & Презентер компонент калькулятора \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_view_1_1_i_calculator_main_view_aef876f184b497085f4fbbc5a14c225b1}{\+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+ICalculator\+Main\+View}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a69403f4f9f31f570b3762e55b31bb263}\index{\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}!OnInputValueChanged@{OnInputValueChanged}}
+\index{OnInputValueChanged@{OnInputValueChanged}!\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}}
+\doxysubsubsection{\texorpdfstring{OnInputValueChanged()}{OnInputValueChanged()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a69403f4f9f31f570b3762e55b31bb263} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Calculator\+Main\+View.\+On\+Input\+Value\+Changed (\begin{DoxyParamCaption}\item[{string}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Метод, отлавливающий изменения данных при вводе в строку 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Новое выражение, полученное из ввода \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a1fe05975f0c70e8ee2e985a9b117b3e6}\index{\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}!SetHistory@{SetHistory}}
+\index{SetHistory@{SetHistory}!\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}}
+\doxysubsubsection{\texorpdfstring{SetHistory()}{SetHistory()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a1fe05975f0c70e8ee2e985a9b117b3e6} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Calculator\+Main\+View.\+Set\+History (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{history}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод записи истории математических вычислений в скролл UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & История математических выражений \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_view_1_1_i_calculator_main_view_aed3f7aa338904b81efc806d434a249bf}{\+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+ICalculator\+Main\+View}}.
+
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a4563a3a6b99ef07ff5122f89ec1c71c6}\index{\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}!SetInputExpression@{SetInputExpression}}
+\index{SetInputExpression@{SetInputExpression}!\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}}
+\doxysubsubsection{\texorpdfstring{SetInputExpression()}{SetInputExpression()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a4563a3a6b99ef07ff5122f89ec1c71c6} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Calculator\+Main\+View.\+Set\+Input\+Expression (\begin{DoxyParamCaption}\item[{string}]{expression}{}\end{DoxyParamCaption})}
+
+
+
+Метод записи выражения в строку ввода 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Математическое выражение для строки ввода \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_view_1_1_i_calculator_main_view_a5a1973c1520852c4f04a342036c9ba3f}{\+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+ICalculator\+Main\+View}}.
+
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a4253e0aaadfee4444bd13e5aa0fd4e40}\index{\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}!SetState@{SetState}}
+\index{SetState@{SetState}!\_Project.Scripts.Calculator.View.CalculatorMainView@{\_Project.Scripts.Calculator.View.CalculatorMainView}}
+\doxysubsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_calculator_main_view_a4253e0aaadfee4444bd13e5aa0fd4e40} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Calculator\+Main\+View.\+Set\+State (\begin{DoxyParamCaption}\item[{bool}]{is\+Open}{}\end{DoxyParamCaption})}
+
+
+
+Метод активации/скрытия вида калькулятора 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Open} & Параметр true/false. Если true -\/ вид отображается, false -\/ вид скрыт \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_view_1_1_i_calculator_main_view_a1a9fc2f612b4c928ccd750e2f594b49c}{\+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+ICalculator\+Main\+View}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Calculator/\+View/Calculator\+Main\+View.\+cs\end{DoxyCompactItemize}

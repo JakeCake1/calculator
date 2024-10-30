@@ -1,0 +1,94 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Warning\+Service.\+Factories.\+Warning\+UIFactory Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory}{}\label{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory}\index{\_Project.Scripts.WarningService.Factories.WarningUIFactory@{\_Project.Scripts.WarningService.Factories.WarningUIFactory}}
+
+
+Класс, отвечающий за создание объектов UI сервиса окна-\/предупреждения  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Warning\+Service.\+Factories.\+Warning\+UIFactory\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Warning\+Service.\+Factories.\+Warning\+UIFactory\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a3124d852c6639acd2624ea799878bf45}{Warning\+UIFactory}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider}{IAsset\+Provider}} asset\+Provider)
+\begin{DoxyCompactList}\small\item\em Конструктор фабрики UI. \end{DoxyCompactList}\item 
+async Uni\+Task$<$ \mbox{\hyperlink{interface___project_1_1_scripts_1_1_warning_service_1_1_view_1_1_i_warning_view}{IWarning\+View}} $>$ \mbox{\hyperlink{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a1ba5461ffc666651551b6abc97aff06c}{Create\+Warning\+Window\+View}} ()
+\begin{DoxyCompactList}\small\item\em Метод создания объекта UI сервиса окна-\/предупреждения \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a40de9b1a6fe4da261db1c63c6030e77b}\label{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a40de9b1a6fe4da261db1c63c6030e77b} 
+void {\bfseries Clear\+Warning\+Window\+View} ()
+\begin{DoxyCompactList}\small\item\em Метод уничтожения объекта UI сервиса окна-\/предупреждения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_i_warning_u_i_factory}{\+\_\+\+Project.\+Scripts.\+Warning\+Service.\+Factories.\+IWarning\+UIFactory}}}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a27a2402a759c7dfdf015b0a6c2fe9b43}\label{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a27a2402a759c7dfdf015b0a6c2fe9b43} 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_warning_service_1_1_view_1_1_warning_service_view}{Warning\+Service\+View}} {\bfseries \+\_\+warning\+Service\+View}
+\begin{DoxyCompactList}\small\item\em Объект UI сервиса окна-\/предупреждения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a88cc75d5616ca2c94ad01a92fa8a3cb3}\label{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a88cc75d5616ca2c94ad01a92fa8a3cb3} 
+const string {\bfseries Warning\+Window\+View\+Address} = "{}Warning Window View"{}
+\begin{DoxyCompactList}\small\item\em Адресс префаба UI сервиса окна-\/предупреждения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class___project_1_1_scripts_1_1_u_i_factory_1_1_u_i_object_factory}{\+\_\+\+Project.\+Scripts.\+UIFactory.\+UIObject\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_u_i_factory_1_1_u_i_object_factory_ac9749c65445f03128914f0faa3cfb6f2}{UIObject\+Factory}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider}{IAsset\+Provider}} asset\+Provider)
+\begin{DoxyCompactList}\small\item\em Конструктор фабрики \end{DoxyCompactList}\item 
+async Uni\+Task$<$ T $>$ \mbox{\hyperlink{class___project_1_1_scripts_1_1_u_i_factory_1_1_u_i_object_factory_aca69fbf39f7eaba9c29c1ff6eea9bdd0}{Create\+UIObject$<$ T $>$}} (string address, Transform parent=null)
+\begin{DoxyCompactList}\small\item\em Метод создания объекта, где Т -\/ класс создаваемого объекта, переданный параметрически \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_u_i_factory_1_1_u_i_object_factory_a99fc93e15800bfe3c7374135a841b23e}{Clean}} (Component component, string address=null)
+\begin{DoxyCompactList}\small\item\em Метод уничтожения объекта \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отвечающий за создание объектов UI сервиса окна-\/предупреждения 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a3124d852c6639acd2624ea799878bf45}\index{\_Project.Scripts.WarningService.Factories.WarningUIFactory@{\_Project.Scripts.WarningService.Factories.WarningUIFactory}!WarningUIFactory@{WarningUIFactory}}
+\index{WarningUIFactory@{WarningUIFactory}!\_Project.Scripts.WarningService.Factories.WarningUIFactory@{\_Project.Scripts.WarningService.Factories.WarningUIFactory}}
+\doxysubsubsection{\texorpdfstring{WarningUIFactory()}{WarningUIFactory()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a3124d852c6639acd2624ea799878bf45} 
+\+\_\+\+Project.\+Scripts.\+Warning\+Service.\+Factories.\+Warning\+UIFactory.\+Warning\+UIFactory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider}{IAsset\+Provider}}}]{asset\+Provider}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор фабрики UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em asset\+Provider} & Поставщик ресурсов \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a1ba5461ffc666651551b6abc97aff06c}\index{\_Project.Scripts.WarningService.Factories.WarningUIFactory@{\_Project.Scripts.WarningService.Factories.WarningUIFactory}!CreateWarningWindowView@{CreateWarningWindowView}}
+\index{CreateWarningWindowView@{CreateWarningWindowView}!\_Project.Scripts.WarningService.Factories.WarningUIFactory@{\_Project.Scripts.WarningService.Factories.WarningUIFactory}}
+\doxysubsubsection{\texorpdfstring{CreateWarningWindowView()}{CreateWarningWindowView()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_warning_u_i_factory_a1ba5461ffc666651551b6abc97aff06c} 
+async Uni\+Task$<$ \mbox{\hyperlink{interface___project_1_1_scripts_1_1_warning_service_1_1_view_1_1_i_warning_view}{IWarning\+View}} $>$ \+\_\+\+Project.\+Scripts.\+Warning\+Service.\+Factories.\+Warning\+UIFactory.\+Create\+Warning\+Window\+View (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод создания объекта UI сервиса окна-\/предупреждения 
+
+\begin{DoxyReturn}{Returns}
+Uni\+Task который можно подождать до завершения процесса создания объекта 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_i_warning_u_i_factory_a4fa554ffb209a9bc4a43cde0b6be97fe}{\+\_\+\+Project.\+Scripts.\+Warning\+Service.\+Factories.\+IWarning\+UIFactory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Warning\+Service/\+Factories/Warning\+UIFactory.\+cs\end{DoxyCompactItemize}

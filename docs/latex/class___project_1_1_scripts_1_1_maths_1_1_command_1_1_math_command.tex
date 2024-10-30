@@ -1,0 +1,99 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Maths.\+Command.\+Math\+Command Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{}\label{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}\index{\_Project.Scripts.Maths.Command.MathCommand@{\_Project.Scripts.Maths.Command.MathCommand}}
+
+
+Базовый класс математической команды  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Command.\+Math\+Command\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_a655ed937ad1e04f12eac683e743008f4}{Get\+Result}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения результата вычисления \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_ac4769b79346696c0ef9db2d58bbc9591}{Execute}} (\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}} expression)
+\begin{DoxyCompactList}\small\item\em Метод выполнения вычисления \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_ac41a7bc426e11837401786da23ecef44}{Solve}} (\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}} expression, out string answer)
+\begin{DoxyCompactList}\small\item\em Метод, опрделяющий ход вычисления \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_ab60f2fba9b93d552ab9520932248ae60}\label{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_ab60f2fba9b93d552ab9520932248ae60} 
+string {\bfseries \+\_\+result}
+\begin{DoxyCompactList}\small\item\em Результат вычисления \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Базовый класс математической команды 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_ac4769b79346696c0ef9db2d58bbc9591}\index{\_Project.Scripts.Maths.Command.MathCommand@{\_Project.Scripts.Maths.Command.MathCommand}!Execute@{Execute}}
+\index{Execute@{Execute}!\_Project.Scripts.Maths.Command.MathCommand@{\_Project.Scripts.Maths.Command.MathCommand}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_ac4769b79346696c0ef9db2d58bbc9591} 
+bool \+\_\+\+Project.\+Scripts.\+Maths.\+Command.\+Math\+Command.\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}}}]{expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод выполнения вычисления 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Математическое выражение \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Флаг успешности вычисления 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_a655ed937ad1e04f12eac683e743008f4}\index{\_Project.Scripts.Maths.Command.MathCommand@{\_Project.Scripts.Maths.Command.MathCommand}!GetResult@{GetResult}}
+\index{GetResult@{GetResult}!\_Project.Scripts.Maths.Command.MathCommand@{\_Project.Scripts.Maths.Command.MathCommand}}
+\doxysubsubsection{\texorpdfstring{GetResult()}{GetResult()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_a655ed937ad1e04f12eac683e743008f4} 
+string \+\_\+\+Project.\+Scripts.\+Maths.\+Command.\+Math\+Command.\+Get\+Result (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Метод получения результата вычисления 
+
+\begin{DoxyReturn}{Returns}
+Результат вычисления 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_ac41a7bc426e11837401786da23ecef44}\index{\_Project.Scripts.Maths.Command.MathCommand@{\_Project.Scripts.Maths.Command.MathCommand}!Solve@{Solve}}
+\index{Solve@{Solve}!\_Project.Scripts.Maths.Command.MathCommand@{\_Project.Scripts.Maths.Command.MathCommand}}
+\doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command_ac41a7bc426e11837401786da23ecef44} 
+bool \+\_\+\+Project.\+Scripts.\+Maths.\+Command.\+Math\+Command.\+Solve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}}}]{expression}{, }\item[{out string}]{answer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Метод, опрделяющий ход вычисления 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Математическое выражение \\
+\hline
+{\em answer} & результат вычисления \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Флаг успешности вычисления 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Maths/\+Command/Math\+Command.\+cs\end{DoxyCompactItemize}

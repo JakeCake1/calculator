@@ -1,0 +1,84 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+ISave\+Data\+Service Interface Reference}
+\hypertarget{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service}{}\label{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service}\index{\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService@{\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService}}
+
+
+Интерфейс, отвечающий за работу с сохраненными данными  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+ISave\+Data\+Service\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_ad7341c061ad8a18e0ad10c1c69bc9c00}\label{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_ad7341c061ad8a18e0ad10c1c69bc9c00} 
+void {\bfseries Load} ()
+\begin{DoxyCompactList}\small\item\em Метод загрузки сохраненных данных \end{DoxyCompactList}\item 
+\Hypertarget{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_a812aeeeb56eac6ff036ffc4169d32a58}\label{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_a812aeeeb56eac6ff036ffc4169d32a58} 
+void {\bfseries Write} ()
+\begin{DoxyCompactList}\small\item\em Метод записи данных в файлы/классы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_a8d36927cad7e9f1344da45fccd8bbca7}{Save}} (string sub\+File, string key, object value)
+\begin{DoxyCompactList}\small\item\em Метод сохранения значения \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_af53cb99ceffecc16a49c05bf1d3eeb12}{Get$<$ T $>$}} (string sub\+File, string key)
+\begin{DoxyCompactList}\small\item\em Метод получения значения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Интерфейс, отвечающий за работу с сохраненными данными 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_af53cb99ceffecc16a49c05bf1d3eeb12}\index{\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService@{\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService}!Get$<$ T $>$@{Get$<$ T $>$}}
+\index{Get$<$ T $>$@{Get$<$ T $>$}!\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService@{\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService}}
+\doxysubsubsection{\texorpdfstring{Get$<$ T $>$()}{Get< T >()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_af53cb99ceffecc16a49c05bf1d3eeb12} 
+T \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+ISave\+Data\+Service.\+Get$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{sub\+File}{, }\item[{string}]{key}{}\end{DoxyParamCaption})}
+
+
+
+Метод получения значения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+File} & Ключ файла для сохранения \\
+\hline
+{\em key} & Ключ значения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение по переданному типу 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a4e0412bbc6f2b3c19b7928334450be96}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Data\+Service}}.
+
+\Hypertarget{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_a8d36927cad7e9f1344da45fccd8bbca7}\index{\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService@{\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService}!Save@{Save}}
+\index{Save@{Save}!\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService@{\_Project.Scripts.SaveDataService.Interfaces.ISaveDataService}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_a8d36927cad7e9f1344da45fccd8bbca7} 
+void \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+ISave\+Data\+Service.\+Save (\begin{DoxyParamCaption}\item[{string}]{sub\+File}{, }\item[{string}]{key}{, }\item[{object}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Метод сохранения значения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+File} & Ключ файла для сохранения \\
+\hline
+{\em key} & Ключ значения \\
+\hline
+{\em value} & Значение \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a6bb96d38f434c180f53fa75401e890fb}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Data\+Service}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Save\+Data\+Service/\+Interfaces/ISave\+Data\+Service.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+File\+Impl Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl}{}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl}\index{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl}}
+
+
+Класс, отвечающий за сохранение данных в файл (Альтернативный способ сохранения)  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+File\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+File\+Impl\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override Dictionary$<$ string, string $>$ \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl_ac384b85dcc25f7e7e65e95655f976051}{Load}} ()
+\begin{DoxyCompactList}\small\item\em Метод загрузки коллекции сохраненных значений \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl_a888a452811d45195332994203972a4c1}{Write}} (string file\+Key, string content)
+\begin{DoxyCompactList}\small\item\em Метод записи коллекции сохраненных значений \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Base\+Save\+Strategy}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy_a14f37f3ea5d18b9794bc5c87769a86b7}{Load}} ()
+\begin{DoxyCompactList}\small\item\em Метод загрузки коллекции сохраненных значений \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy_aacb53050420afca5ecade15ff9f0203f}{Write}} (string file\+Key, string content)
+\begin{DoxyCompactList}\small\item\em Метод записи коллекции сохраненных значений \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl_a7a5526eb2a894f055b6250a25f56797f}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl_a7a5526eb2a894f055b6250a25f56797f} 
+readonly string {\bfseries \+\_\+base\+File\+Directory\+Path} = Path.\+Combine(Application.\+persistent\+Data\+Path, "{}Saves"{})
+\begin{DoxyCompactList}\small\item\em Директория для сохранения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отвечающий за сохранение данных в файл (Альтернативный способ сохранения) 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl_ac384b85dcc25f7e7e65e95655f976051}\index{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl}!Load@{Load}}
+\index{Load@{Load}!\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl_ac384b85dcc25f7e7e65e95655f976051} 
+override Dictionary$<$ string, string $>$ \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+File\+Impl.\+Load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод загрузки коллекции сохраненных значений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & Строка в JSON формате \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Коллекция сохраненных значений 
+\end{DoxyReturn}
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl_a888a452811d45195332994203972a4c1}\index{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl}!Write@{Write}}
+\index{Write@{Write}!\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToFileImpl}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_file_impl_a888a452811d45195332994203972a4c1} 
+override void \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+File\+Impl.\+Write (\begin{DoxyParamCaption}\item[{string}]{file\+Key}{, }\item[{string}]{content}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод записи коллекции сохраненных значений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Key} & Ключ файла для сохранения \\
+\hline
+{\em content} & Строка в JSON формате \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Save\+Data\+Service/\+Save\+Implementations/Save\+To\+File\+Impl.\+cs\end{DoxyCompactItemize}

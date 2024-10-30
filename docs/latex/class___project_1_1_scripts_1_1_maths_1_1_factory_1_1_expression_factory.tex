@@ -1,0 +1,110 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Maths.\+Factory.\+Expression\+Factory Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory}{}\label{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory}\index{\_Project.Scripts.Maths.Factory.ExpressionFactory@{\_Project.Scripts.Maths.Factory.ExpressionFactory}}
+
+
+Класс, отвечающий за создание математических выражений  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Factory.\+Expression\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Factory.\+Expression\+Factory\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}} \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory_a36667174b799b9268a537dc3af01138f}{Create\+Expression}} (string expression\+String, \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}} available\+Math\+Commands)
+\begin{DoxyCompactList}\small\item\em Метод создания математического выражения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_factory_1_1_i_expression_factory}{\+\_\+\+Project.\+Scripts.\+Maths.\+Factory.\+IExpression\+Factory}}}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory_a898d99564062b3edb960ab364ec8ebc5}{Make\+Regex\+Expression\+Pattern}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}} available\+Math\+Commands)
+\begin{DoxyCompactList}\small\item\em Метод создания паттерна для подбора нужной математической команды \end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory_a437855505475f722694b40ce2156830c}{Find\+Operands\+And\+Operator}} (string expression\+String, string pattern, out string @operator)
+\begin{DoxyCompactList}\small\item\em Метод поиска элементов математического выражения по паттерну \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отвечающий за создание математических выражений 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory_a36667174b799b9268a537dc3af01138f}\index{\_Project.Scripts.Maths.Factory.ExpressionFactory@{\_Project.Scripts.Maths.Factory.ExpressionFactory}!CreateExpression@{CreateExpression}}
+\index{CreateExpression@{CreateExpression}!\_Project.Scripts.Maths.Factory.ExpressionFactory@{\_Project.Scripts.Maths.Factory.ExpressionFactory}}
+\doxysubsubsection{\texorpdfstring{CreateExpression()}{CreateExpression()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory_a36667174b799b9268a537dc3af01138f} 
+\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}} \+\_\+\+Project.\+Scripts.\+Maths.\+Factory.\+Expression\+Factory.\+Create\+Expression (\begin{DoxyParamCaption}\item[{string}]{expression\+String}{, }\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}}}]{available\+Math\+Commands}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод создания математического выражения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression\+String} & Строка с математическим выражением \\
+\hline
+{\em available\+Math\+Commands} & Коллекция доступных математических команд \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Математическое выражение для выполнения команд над ним 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_factory_1_1_i_expression_factory_ad98e9f476f4cebc82a445cdbd09b0670}{\+\_\+\+Project.\+Scripts.\+Maths.\+Factory.\+IExpression\+Factory}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory_a437855505475f722694b40ce2156830c}\index{\_Project.Scripts.Maths.Factory.ExpressionFactory@{\_Project.Scripts.Maths.Factory.ExpressionFactory}!FindOperandsAndOperator@{FindOperandsAndOperator}}
+\index{FindOperandsAndOperator@{FindOperandsAndOperator}!\_Project.Scripts.Maths.Factory.ExpressionFactory@{\_Project.Scripts.Maths.Factory.ExpressionFactory}}
+\doxysubsubsection{\texorpdfstring{FindOperandsAndOperator()}{FindOperandsAndOperator()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory_a437855505475f722694b40ce2156830c} 
+string\mbox{[}$\,$\mbox{]} \+\_\+\+Project.\+Scripts.\+Maths.\+Factory.\+Expression\+Factory.\+Find\+Operands\+And\+Operator (\begin{DoxyParamCaption}\item[{string}]{expression\+String}{, }\item[{string}]{pattern}{, }\item[{out string @}]{operator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод поиска элементов математического выражения по паттерну 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression\+String} & Строка с математическим выражением \\
+\hline
+{\em pattern} & Паттерн для подбора операндов и знака операций, связанных с математической командой \\
+\hline
+{\em } & \\
+\hline
+\end{DoxyParams}
+operator Знак оператора для составления математического выражения \begin{DoxyReturn}{Returns}
+Операнды для составления математического выражения ~\newline
+ 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory_a898d99564062b3edb960ab364ec8ebc5}\index{\_Project.Scripts.Maths.Factory.ExpressionFactory@{\_Project.Scripts.Maths.Factory.ExpressionFactory}!MakeRegexExpressionPattern@{MakeRegexExpressionPattern}}
+\index{MakeRegexExpressionPattern@{MakeRegexExpressionPattern}!\_Project.Scripts.Maths.Factory.ExpressionFactory@{\_Project.Scripts.Maths.Factory.ExpressionFactory}}
+\doxysubsubsection{\texorpdfstring{MakeRegexExpressionPattern()}{MakeRegexExpressionPattern()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory_a898d99564062b3edb960ab364ec8ebc5} 
+string \+\_\+\+Project.\+Scripts.\+Maths.\+Factory.\+Expression\+Factory.\+Make\+Regex\+Expression\+Pattern (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}}}]{available\+Math\+Commands}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод создания паттерна для подбора нужной математической команды 
+
+
+\begin{DoxyParams}{Parameters}
+{\em available\+Math\+Commands} & Коллекция доступных математических команд \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Паттерн для подбора операндов и знака операций, связанных с математической командой 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Maths/\+Factory/Expression\+Factory.\+cs\end{DoxyCompactItemize}

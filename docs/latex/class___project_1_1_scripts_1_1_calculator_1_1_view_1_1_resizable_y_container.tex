@@ -1,0 +1,61 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Resizable\+YContainer Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container}{}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container}\index{\_Project.Scripts.Calculator.View.ResizableYContainer@{\_Project.Scripts.Calculator.View.ResizableYContainer}}
+
+
+Компонент для контроля высоты Rect\+Transform в зависимости от высоты другого объекта  
+
+
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_ac04292b8d9cca03c93e628b4f1524b58}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_ac04292b8d9cca03c93e628b4f1524b58} 
+void {\bfseries Start} ()
+\begin{DoxyCompactList}\small\item\em Метод инициализации и подбора первичной высоты компонента Rect\+Transform. \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_a127e55253bf51de1fa91e7111edd7dc7}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_a127e55253bf51de1fa91e7111edd7dc7} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Метод для считывания изменений размера целевого Rect\+Transform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_ae59c19675b98a3e43525d5b1888d2dc1}{On\+Size\+Changed}} (Vector2 new\+Size)
+\begin{DoxyCompactList}\small\item\em Метод для обновления размера Rect\+Transform текущего объекта \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_a6d2556b69ae74d39d4a8c25aa170d8c7}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_a6d2556b69ae74d39d4a8c25aa170d8c7} 
+Rect\+Transform {\bfseries \+\_\+target\+Transform}
+\begin{DoxyCompactList}\small\item\em Целевой компонент для подбора высоты \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_a76d170aee098a0152bced2ccae24de0a}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_a76d170aee098a0152bced2ccae24de0a} 
+float {\bfseries \+\_\+maximum\+SizeY}
+\begin{DoxyCompactList}\small\item\em Максимальная возможная высота Rect\+Transform. \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_aab4f6f4a0c418bd85129e0c2ece13c48}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_aab4f6f4a0c418bd85129e0c2ece13c48} 
+Rect\+Transform {\bfseries \+\_\+rect\+Transform}
+\begin{DoxyCompactList}\small\item\em Компонент Rect\+Transform текущего объекта \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_a8693d88df9c3c7bffd8a72b97914744f}\label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_a8693d88df9c3c7bffd8a72b97914744f} 
+Vector2 {\bfseries \+\_\+last\+Size}
+\begin{DoxyCompactList}\small\item\em Последний полученный размер целеового компонента \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Компонент для контроля высоты Rect\+Transform в зависимости от высоты другого объекта 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_ae59c19675b98a3e43525d5b1888d2dc1}\index{\_Project.Scripts.Calculator.View.ResizableYContainer@{\_Project.Scripts.Calculator.View.ResizableYContainer}!OnSizeChanged@{OnSizeChanged}}
+\index{OnSizeChanged@{OnSizeChanged}!\_Project.Scripts.Calculator.View.ResizableYContainer@{\_Project.Scripts.Calculator.View.ResizableYContainer}}
+\doxysubsubsection{\texorpdfstring{OnSizeChanged()}{OnSizeChanged()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container_ae59c19675b98a3e43525d5b1888d2dc1} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+View.\+Resizable\+YContainer.\+On\+Size\+Changed (\begin{DoxyParamCaption}\item[{Vector2}]{new\+Size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод для обновления размера Rect\+Transform текущего объекта 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Size} & Новый размер целевого Rect\+Transform \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Calculator/\+View/Resizable\+YContainer.\+cs\end{DoxyCompactItemize}

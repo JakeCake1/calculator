@@ -1,0 +1,15 @@
+digraph "_Project.Scripts.SaveDataService.SaveDataService"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="_Project.Scripts.SaveData\lService.SaveDataService",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Класс, отвечающий за работу с сохраненными данными"];
+  Node2 -> Node1 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ISaveDataService",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service.html",tooltip="Интерфейс, отвечающий за работу с сохраненными данными"];
+  Node3 -> Node1 [id="edge2_Node000001_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _saveStrategy",fontcolor="grey" ];
+  Node3 [id="Node000003",label="_Project.Scripts.SaveData\lService.BaseSaveStrategy",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy.html",tooltip="Класс, отвечающий за алгоритм сохранения данных"];
+  Node4 -> Node1 [id="edge3_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _dataLoader",fontcolor="grey" ];
+  Node4 [id="Node000004",label="_Project.Scripts.SaveData\lService.Interfaces.IDataLoader",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader.html",tooltip="Интерфейс, отвечающий за конвертирование сохраненных данных"];
+}

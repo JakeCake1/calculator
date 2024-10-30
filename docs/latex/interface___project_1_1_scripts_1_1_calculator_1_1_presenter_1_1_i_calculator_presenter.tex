@@ -1,0 +1,91 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Calculator.\+Presenter.\+ICalculator\+Presenter Interface Reference}
+\hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter}{}\label{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter}\index{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter@{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter}}
+
+
+Интерфейс, описывающий презентер часть калькулятора  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Calculator.\+Presenter.\+ICalculator\+Presenter\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_a6e063f65498bdafc8af19246bae829de}{Init}} (Action on\+Error\+Occurred)
+\begin{DoxyCompactList}\small\item\em Метод инициализации презентера \end{DoxyCompactList}\item 
+\Hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_aaf799d80faaa8f3735ee17840a7afd60}\label{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_aaf799d80faaa8f3735ee17840a7afd60} 
+void {\bfseries Update\+State} ()
+\begin{DoxyCompactList}\small\item\em Метод обновления состояния калькулятора \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_a0197b957089f67871552e3b1a19625da}{Set\+Input\+Expression}} (string expression)
+\begin{DoxyCompactList}\small\item\em Метод записи из строки ввода \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_a69e472dee3002a4c9e1ecae8372045a3}{Solve}} (string expression)
+\begin{DoxyCompactList}\small\item\em Метод получения решения математичского выражения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Интерфейс, описывающий презентер часть калькулятора 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_a6e063f65498bdafc8af19246bae829de}\index{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter@{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter}!Init@{Init}}
+\index{Init@{Init}!\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter@{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_a6e063f65498bdafc8af19246bae829de} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+Presenter.\+ICalculator\+Presenter.\+Init (\begin{DoxyParamCaption}\item[{Action}]{on\+Error\+Occurred}{}\end{DoxyParamCaption})}
+
+
+
+Метод инициализации презентера 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Error\+Occurred} & Ивент появления ошибочного решения \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_calculator_presenter_a144bdf4a524788a303afc1d21b75a4b4}{\+\_\+\+Project.\+Scripts.\+Calculator.\+Presenter.\+Calculator\+Presenter}}.
+
+\Hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_a0197b957089f67871552e3b1a19625da}\index{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter@{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter}!SetInputExpression@{SetInputExpression}}
+\index{SetInputExpression@{SetInputExpression}!\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter@{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter}}
+\doxysubsubsection{\texorpdfstring{SetInputExpression()}{SetInputExpression()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_a0197b957089f67871552e3b1a19625da} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+Presenter.\+ICalculator\+Presenter.\+Set\+Input\+Expression (\begin{DoxyParamCaption}\item[{string}]{expression}{}\end{DoxyParamCaption})}
+
+
+
+Метод записи из строки ввода 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Содержимое строки ввода \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_calculator_presenter_aa4258056653562b6a84e8a263098b2dc}{\+\_\+\+Project.\+Scripts.\+Calculator.\+Presenter.\+Calculator\+Presenter}}.
+
+\Hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_a69e472dee3002a4c9e1ecae8372045a3}\index{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter@{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter}!Solve@{Solve}}
+\index{Solve@{Solve}!\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter@{\_Project.Scripts.Calculator.Presenter.ICalculatorPresenter}}
+\doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_i_calculator_presenter_a69e472dee3002a4c9e1ecae8372045a3} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+Presenter.\+ICalculator\+Presenter.\+Solve (\begin{DoxyParamCaption}\item[{string}]{expression}{}\end{DoxyParamCaption})}
+
+
+
+Метод получения решения математичского выражения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Содержимое строки ввода \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_presenter_1_1_calculator_presenter_a1da8ffe2f1af900efd472b51a403916c}{\+\_\+\+Project.\+Scripts.\+Calculator.\+Presenter.\+Calculator\+Presenter}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Calculator/\+Presenter/ICalculator\+Presenter.\+cs\end{DoxyCompactItemize}

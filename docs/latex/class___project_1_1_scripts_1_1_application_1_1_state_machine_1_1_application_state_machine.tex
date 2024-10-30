@@ -1,0 +1,77 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+Application\+State\+Machine Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine}{}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine}\index{\_Project.Scripts.Application.StateMachine.ApplicationStateMachine@{\_Project.Scripts.Application.StateMachine.ApplicationStateMachine}}
+
+
+Машина состояний, отвечающая за переключение между состояниями приложения  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+Application\+State\+Machine\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+Application\+State\+Machine\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a35821202f77d722170df26238a68bcc7}{Application\+State\+Machine}} (IObject\+Resolver container)
+\begin{DoxyCompactList}\small\item\em Конструктор машины состояний \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a2b4ebde6b5063bccb3442de62c796620}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a2b4ebde6b5063bccb3442de62c796620} 
+void {\bfseries Enter$<$ TState $>$} ()
+\begin{DoxyCompactList}\small\item\em Метод входа в состояние, принимающий тип состояния как параметр \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_interfaces_1_1_i_application_state_machine}{\+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+Interfaces.\+IApplication\+State\+Machine}}}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_acef5f65419c5c6658411b63eb33c69f6}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_acef5f65419c5c6658411b63eb33c69f6} 
+void {\bfseries Lazy\+Create\+State$<$ TState $>$} ()
+\begin{DoxyCompactList}\small\item\em Метод создания состояния, срабатывающий при первом входе в состояние, принимающий тип состояния как параметр \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a5efbd0dc5864c9cb74058ac2f27e75df}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a5efbd0dc5864c9cb74058ac2f27e75df} 
+bool {\bfseries Is\+Application\+Already\+In\+This\+State$<$ TState $>$} ()
+\begin{DoxyCompactList}\small\item\em Метод проверки текущего состояния, принимающий тип состояния как параметр. Нужен для того, чтобы избежать повторного входа в одно и то же состояние \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_afb32e581aa73e6cbd84f2a6b5aa70fa6}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_afb32e581aa73e6cbd84f2a6b5aa70fa6} 
+TState {\bfseries Change\+State$<$ TState $>$} ()
+\begin{DoxyCompactList}\small\item\em Метод изменения состояния приложения, принимающий тип состояния как параметр \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_ac4baf791b209474238e3100ee7e2028e}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_ac4baf791b209474238e3100ee7e2028e} 
+TState {\bfseries Get\+State$<$ TState $>$} ()
+\begin{DoxyCompactList}\small\item\em Метод получения экземпляра состояния приложения, принимающий тип состояния как параметр \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a06063936ef29e608eb47ba1ff623807b}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a06063936ef29e608eb47ba1ff623807b} 
+readonly Dictionary$<$ Type, \mbox{\hyperlink{interface___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_interfaces_1_1_i_application_exitable_state}{IApplication\+Exitable\+State}} $>$ {\bfseries \+\_\+states}
+\begin{DoxyCompactList}\small\item\em Коллекция доступных состояний \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a81c5fd1a26a87862f8a127a8df05a901}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a81c5fd1a26a87862f8a127a8df05a901} 
+readonly IObject\+Resolver {\bfseries \+\_\+container}
+\begin{DoxyCompactList}\small\item\em Контейнер зависимостей (VContainer) \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a77c111c77d63b21c0ac3ecfd779905eb}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a77c111c77d63b21c0ac3ecfd779905eb} 
+\mbox{\hyperlink{interface___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_interfaces_1_1_i_application_exitable_state}{IApplication\+Exitable\+State}} {\bfseries \+\_\+active\+Application\+Exitable\+State}
+\begin{DoxyCompactList}\small\item\em Текущее состояние \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Машина состояний, отвечающая за переключение между состояниями приложения 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a35821202f77d722170df26238a68bcc7}\index{\_Project.Scripts.Application.StateMachine.ApplicationStateMachine@{\_Project.Scripts.Application.StateMachine.ApplicationStateMachine}!ApplicationStateMachine@{ApplicationStateMachine}}
+\index{ApplicationStateMachine@{ApplicationStateMachine}!\_Project.Scripts.Application.StateMachine.ApplicationStateMachine@{\_Project.Scripts.Application.StateMachine.ApplicationStateMachine}}
+\doxysubsubsection{\texorpdfstring{ApplicationStateMachine()}{ApplicationStateMachine()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_state_machine_a35821202f77d722170df26238a68bcc7} 
+\+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+Application\+State\+Machine.\+Application\+State\+Machine (\begin{DoxyParamCaption}\item[{IObject\+Resolver}]{container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор машины состояний 
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & Контейнер зависимостей (VContainer) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Application/\+State\+Machine/Application\+State\+Machine.\+cs\end{DoxyCompactItemize}

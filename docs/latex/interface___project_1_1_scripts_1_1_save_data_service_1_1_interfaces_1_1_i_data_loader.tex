@@ -1,0 +1,77 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+IData\+Loader Interface Reference}
+\hypertarget{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader}{}\label{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader}\index{\_Project.Scripts.SaveDataService.Interfaces.IDataLoader@{\_Project.Scripts.SaveDataService.Interfaces.IDataLoader}}
+
+
+Интерфейс, отвечающий за конвертирование сохраненных данных  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+IData\+Loader\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader_a5de5c106b0d190dd6114a3a67c146938}{Convert\+Data\+For\+Reading}} (string content)
+\begin{DoxyCompactList}\small\item\em Метод конвертирования JSON в коллекцию \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader_ad788ce7d0a8c18f45c7a73788d2be06a}{Convert\+Data\+For\+Saving}} (Dictionary$<$ string, object $>$ saved\+Values)
+\begin{DoxyCompactList}\small\item\em Метод конвертирования коллекции в JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Интерфейс, отвечающий за конвертирование сохраненных данных 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader_a5de5c106b0d190dd6114a3a67c146938}\index{\_Project.Scripts.SaveDataService.Interfaces.IDataLoader@{\_Project.Scripts.SaveDataService.Interfaces.IDataLoader}!ConvertDataForReading@{ConvertDataForReading}}
+\index{ConvertDataForReading@{ConvertDataForReading}!\_Project.Scripts.SaveDataService.Interfaces.IDataLoader@{\_Project.Scripts.SaveDataService.Interfaces.IDataLoader}}
+\doxysubsubsection{\texorpdfstring{ConvertDataForReading()}{ConvertDataForReading()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader_a5de5c106b0d190dd6114a3a67c146938} 
+Dictionary$<$ string, object $>$ \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+IData\+Loader.\+Convert\+Data\+For\+Reading (\begin{DoxyParamCaption}\item[{string}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Метод конвертирования JSON в коллекцию 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & Строка в JSON формате \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Коллекция сохраненных значений 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_data_loader_ae4ad8179f052c3deb60abed6bc9d2e20}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Data\+Loader}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader_ad788ce7d0a8c18f45c7a73788d2be06a}\index{\_Project.Scripts.SaveDataService.Interfaces.IDataLoader@{\_Project.Scripts.SaveDataService.Interfaces.IDataLoader}!ConvertDataForSaving@{ConvertDataForSaving}}
+\index{ConvertDataForSaving@{ConvertDataForSaving}!\_Project.Scripts.SaveDataService.Interfaces.IDataLoader@{\_Project.Scripts.SaveDataService.Interfaces.IDataLoader}}
+\doxysubsubsection{\texorpdfstring{ConvertDataForSaving()}{ConvertDataForSaving()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader_ad788ce7d0a8c18f45c7a73788d2be06a} 
+string \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+IData\+Loader.\+Convert\+Data\+For\+Saving (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{saved\+Values}{}\end{DoxyParamCaption})}
+
+
+
+Метод конвертирования коллекции в JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em saved\+Values} & Коллекция сохраненных значений \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Строка в JSON формате 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_data_loader_afe518dd585f720902d15eff7bfb21302}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Data\+Loader}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Save\+Data\+Service/\+Interfaces/IData\+Loader.\+cs\end{DoxyCompactItemize}

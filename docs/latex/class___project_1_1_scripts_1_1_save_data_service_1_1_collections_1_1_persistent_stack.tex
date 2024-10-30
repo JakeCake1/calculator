@@ -1,0 +1,247 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+
+
+Класс-\/стек, коллекция с сохранением значений между сессиями  
+
+
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a2f89b98f9627583d5b3ef224b8c14318}{Persistent\+Stack}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service}{ISave\+Data\+Service}} save\+Data\+Service)
+\begin{DoxyCompactList}\small\item\em Конструктор стека \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_aa79ee9727675b41f38d2829238af8b4b}{Set\+Max\+Capacity}} (int max\+Capacity)
+\begin{DoxyCompactList}\small\item\em Метод настройки максимальной вместимости стека \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_ac52d510d6aaff174b01e3406f6c2a017}{Load}} (string sub\+File, string key)
+\begin{DoxyCompactList}\small\item\em Метод загрузки коллекции \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a12d7094494f33c6ef16767ad36405028}{Push}} (T obj)
+\begin{DoxyCompactList}\small\item\em Метод вставки в стек \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a96a09e233c2884634c114590c514f27b}{Pop}} ()
+\begin{DoxyCompactList}\small\item\em Метод удаления из стека \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a4f574457214b4eee732f3637640bc720}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a4f574457214b4eee732f3637640bc720} 
+void {\bfseries Clear} ()
+\begin{DoxyCompactList}\small\item\em Метод очистки стека \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a4e5830318716754b8b3b550342cded82}{Peek}} ()
+\begin{DoxyCompactList}\small\item\em Метод взятия значения из стека \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a6694f08d3518334aaabf1fd509919c70}{Count}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения количества значений в стеке \end{DoxyCompactList}\item 
+T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_ac3c9cd965da563752d6f68928ed85976}{To\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения массива значений из стека \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a5847220a444b5e2efcbb89e94a09bb28}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a5847220a444b5e2efcbb89e94a09bb28} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Persistent\+Stack} ()
+\begin{DoxyCompactList}\small\item\em Деструктор стека \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a819a3c534f533fd1dac6fe3df857a8b1}{Is\+Initialized}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения флага инициализации \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a72b22fa23435b896dfa3dc1e175d8a9a}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a72b22fa23435b896dfa3dc1e175d8a9a} 
+void {\bfseries Write\+Stack} ()
+\begin{DoxyCompactList}\small\item\em Метод записи значений в стек \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a967127cedcb53a4a1910143a089d4e19}{Reverse}} (Stack$<$ T $>$ stack)
+\begin{DoxyCompactList}\small\item\em Метод для переворачивания порядка значений в стеке \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a438ec235a929691b09514b83076b7375}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a438ec235a929691b09514b83076b7375} 
+readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service}{ISave\+Data\+Service}} {\bfseries \+\_\+save\+Data\+Service}
+\begin{DoxyCompactList}\small\item\em Сервис для сохранения данных \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_aedb96c5e05233bbbc71ba7ac824909ef}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_aedb96c5e05233bbbc71ba7ac824909ef} 
+bool {\bfseries \+\_\+is\+Initialized}
+\begin{DoxyCompactList}\small\item\em Флаг инициализации коллекции \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a52d1964a07e4825a193f79194c1d303b}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a52d1964a07e4825a193f79194c1d303b} 
+string {\bfseries \+\_\+key}
+\begin{DoxyCompactList}\small\item\em Ключ для сохранения коллекции \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a2e75465828f422312906f85e60881bcb}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a2e75465828f422312906f85e60881bcb} 
+int {\bfseries \+\_\+max\+Capacity} = int.\+Max\+Value
+\begin{DoxyCompactList}\small\item\em Максимальная вместительность коллекции \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_ada141611943dbade950768ae45cde1a0}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_ada141611943dbade950768ae45cde1a0} 
+Stack$<$ T $>$ {\bfseries \+\_\+stack}
+\begin{DoxyCompactList}\small\item\em Базовая коллекция-\/стек \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a3b4e71438f4ccb299e99fcc63ab9651c}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a3b4e71438f4ccb299e99fcc63ab9651c} 
+string {\bfseries \+\_\+sub\+File}
+\begin{DoxyCompactList}\small\item\em Ключ файла для сохранения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/стек, коллекция с сохранением значений между сессиями 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a2f89b98f9627583d5b3ef224b8c14318}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!PersistentStack@{PersistentStack}}
+\index{PersistentStack@{PersistentStack}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{PersistentStack()}{PersistentStack()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a2f89b98f9627583d5b3ef224b8c14318} 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.\mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{Persistent\+Stack}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service}{ISave\+Data\+Service}}}]{save\+Data\+Service}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор стека 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Data\+Service} & Сервис для сохранения данных \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a6694f08d3518334aaabf1fd509919c70}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!Count@{Count}}
+\index{Count@{Count}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Count()}{Count()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a6694f08d3518334aaabf1fd509919c70} 
+int \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод получения количества значений в стеке 
+
+\begin{DoxyReturn}{Returns}
+Количестов значений в стеке 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a819a3c534f533fd1dac6fe3df857a8b1}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!IsInitialized@{IsInitialized}}
+\index{IsInitialized@{IsInitialized}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsInitialized()}{IsInitialized()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a819a3c534f533fd1dac6fe3df857a8b1} 
+bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.Is\+Initialized (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод получения флага инициализации 
+
+\begin{DoxyReturn}{Returns}
+Флаг инициализации 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_ac52d510d6aaff174b01e3406f6c2a017}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!Load@{Load}}
+\index{Load@{Load}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_ac52d510d6aaff174b01e3406f6c2a017} 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.Load (\begin{DoxyParamCaption}\item[{string}]{sub\+File}{, }\item[{string}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод загрузки коллекции 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+File} & Ключ файла для сохранения \\
+\hline
+{\em key} & Ключ для сохранения коллекции \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a4e5830318716754b8b3b550342cded82}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!Peek@{Peek}}
+\index{Peek@{Peek}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a4e5830318716754b8b3b550342cded82} 
+T \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.Peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод взятия значения из стека 
+
+\begin{DoxyReturn}{Returns}
+Значение из стека 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 5
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a96a09e233c2884634c114590c514f27b}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a96a09e233c2884634c114590c514f27b} 
+T \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.Pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод удаления из стека 
+
+\begin{DoxyReturn}{Returns}
+Удаленное значение 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 6
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a12d7094494f33c6ef16767ad36405028}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!Push@{Push}}
+\index{Push@{Push}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a12d7094494f33c6ef16767ad36405028} 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.Push (\begin{DoxyParamCaption}\item[{T}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод вставки в стек 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Значение для вставки \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 7
+Here is the caller graph for this function\+:
+% FIG 8
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a967127cedcb53a4a1910143a089d4e19}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!Reverse@{Reverse}}
+\index{Reverse@{Reverse}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Reverse()}{Reverse()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_a967127cedcb53a4a1910143a089d4e19} 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.Reverse (\begin{DoxyParamCaption}\item[{Stack$<$ T $>$}]{stack}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод для переворачивания порядка значений в стеке 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Базовый стек \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 9
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_aa79ee9727675b41f38d2829238af8b4b}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!SetMaxCapacity@{SetMaxCapacity}}
+\index{SetMaxCapacity@{SetMaxCapacity}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetMaxCapacity()}{SetMaxCapacity()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_aa79ee9727675b41f38d2829238af8b4b} 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.Set\+Max\+Capacity (\begin{DoxyParamCaption}\item[{int}]{max\+Capacity}{}\end{DoxyParamCaption})}
+
+
+
+Метод настройки максимальной вместимости стека 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Capacity} & Максимальная вместимость стека \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 10
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_ac3c9cd965da563752d6f68928ed85976}\index{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$@{\_Project.Scripts.SaveDataService.Collections.PersistentStack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack_ac3c9cd965da563752d6f68928ed85976} 
+T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Collections.\+Persistent\+Stack}}$<$ T $>$.To\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод получения массива значений из стека 
+
+\begin{DoxyReturn}{Returns}
+Массив значений 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 11
+Here is the caller graph for this function\+:
+% FIG 12
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Save\+Data\+Service/\+Collections/Persistent\+Stack.\+cs\end{DoxyCompactItemize}

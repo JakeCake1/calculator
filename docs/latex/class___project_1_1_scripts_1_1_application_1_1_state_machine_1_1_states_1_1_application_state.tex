@@ -1,0 +1,84 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+States.\+Application\+State Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state}{}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state}\index{\_Project.Scripts.Application.StateMachine.States.ApplicationState@{\_Project.Scripts.Application.StateMachine.States.ApplicationState}}
+
+
+Класс-\/состояние, отвечающий за основную логику в приложении  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+States.\+Application\+State\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+States.\+Application\+State\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_a6c8da1873783fa9ca7fd4d5a14e1606f}{Application\+State}} (\mbox{\hyperlink{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_dependencies_insta0526825eb3b1946d5e5a860ee151471b}{Application\+Lifetime\+Scope}} application\+Lifetime\+Scope)
+\begin{DoxyCompactList}\small\item\em Конструктор состояния \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_afb643af2b8265d03677957b29a8a8107}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_afb643af2b8265d03677957b29a8a8107} 
+async void {\bfseries Enter} ()
+\begin{DoxyCompactList}\small\item\em Метод входа в состояние \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_aa05430ee9bc3a3617d157bf2d314792c}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_aa05430ee9bc3a3617d157bf2d314792c} 
+void {\bfseries Exit} ()
+\begin{DoxyCompactList}\small\item\em Метод выхода из состояния \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_interfaces_1_1_i_application_state}{\+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+Interfaces.\+IApplication\+State}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_interfaces_1_1_i_application_exitable_state}{\+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+Interfaces.\+IApplication\+Exitable\+State}}}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_a2282b9f395572c832380f7d00f4ceb89}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_a2282b9f395572c832380f7d00f4ceb89} 
+void {\bfseries Activate\+Calculator\+View} ()
+\begin{DoxyCompactList}\small\item\em Метод активации UI калькулятора \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_aa1006666c0506415ae4cfe64795006cf}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_aa1006666c0506415ae4cfe64795006cf} 
+void {\bfseries Open\+Warning\+Window} ()
+\begin{DoxyCompactList}\small\item\em Метод открытия окна-\/предупреждения \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_af8c6256920108f805707614dc8b1b40a}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_af8c6256920108f805707614dc8b1b40a} 
+void {\bfseries Create\+Application\+State\+Dependencies} ()
+\begin{DoxyCompactList}\small\item\em Создание и получение зависимостей для данного состояния приложения \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_adfc3ea0288c3f9c8c733157c42324325}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_adfc3ea0288c3f9c8c733157c42324325} 
+void {\bfseries Cleanup\+Application\+State\+Dependencies} ()
+\begin{DoxyCompactList}\small\item\em Вызов очистки зависимостей для данного состояния приложения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_a75324be9e1941da73e24f29f92fe602e}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_a75324be9e1941da73e24f29f92fe602e} 
+\mbox{\hyperlink{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service}{IWarning\+Service}} {\bfseries \+\_\+warning\+Service}
+\begin{DoxyCompactList}\small\item\em Сервис, вызывающий окно с предупреждением \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_aee942fc38d579d62c0ed6b1fdb2a9558}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_aee942fc38d579d62c0ed6b1fdb2a9558} 
+\mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_i_calculator}{ICalculator}} {\bfseries \+\_\+calculator}
+\begin{DoxyCompactList}\small\item\em Логика калькулятора \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_a58234b40a4302c06a73bafacb74b27c5}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_a58234b40a4302c06a73bafacb74b27c5} 
+readonly \mbox{\hyperlink{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_dependencies_insta0526825eb3b1946d5e5a860ee151471b}{Application\+Lifetime\+Scope}} {\bfseries \+\_\+application\+Lifetime\+Scope}
+\begin{DoxyCompactList}\small\item\em Объект -\/ глобальная область существования, содержащий регистрацию инъекций сервисов для всего времени жизни приложения \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_acd717809689b60f7143f528c29d30909}\label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_acd717809689b60f7143f528c29d30909} 
+Lifetime\+Scope {\bfseries \+\_\+application\+Scope}
+\begin{DoxyCompactList}\small\item\em Объект -\/ область существования, содержащий регистрацию инъекций логики для этого состояния приложения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/состояние, отвечающий за основную логику в приложении 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_a6c8da1873783fa9ca7fd4d5a14e1606f}\index{\_Project.Scripts.Application.StateMachine.States.ApplicationState@{\_Project.Scripts.Application.StateMachine.States.ApplicationState}!ApplicationState@{ApplicationState}}
+\index{ApplicationState@{ApplicationState}!\_Project.Scripts.Application.StateMachine.States.ApplicationState@{\_Project.Scripts.Application.StateMachine.States.ApplicationState}}
+\doxysubsubsection{\texorpdfstring{ApplicationState()}{ApplicationState()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_states_1_1_application_state_a6c8da1873783fa9ca7fd4d5a14e1606f} 
+\+\_\+\+Project.\+Scripts.\+Application.\+State\+Machine.\+States.\+Application\+State.\+Application\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class___project_1_1_scripts_1_1_application_1_1_state_machine_1_1_application_dependencies_insta0526825eb3b1946d5e5a860ee151471b}{Application\+Lifetime\+Scope}}}]{application\+Lifetime\+Scope}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор состояния 
+
+
+\begin{DoxyParams}{Parameters}
+{\em application\+Lifetime\+Scope} & Объект -\/ глобальная область существования, содержащий регистрацию инъекций сервисов для всего времени жизни приложения \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Application/\+State\+Machine/\+States/Application\+State.\+cs\end{DoxyCompactItemize}

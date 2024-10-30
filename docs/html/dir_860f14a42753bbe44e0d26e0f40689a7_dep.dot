@@ -1,0 +1,22 @@
+digraph "Assets/_Project/Scripts"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_a1bc300b05678a6de8ea3a33feb6fb14 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="_Project", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_a1bc300b05678a6de8ea3a33feb6fb14.html",tooltip=""]
+  subgraph clusterdir_860f14a42753bbe44e0d26e0f40689a7 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_860f14a42753bbe44e0d26e0f40689a7.html",tooltip=""]
+    dir_860f14a42753bbe44e0d26e0f40689a7 [shape=plaintext, label="Scripts"];
+  dir_112405811aece71a6ddb1cffe89f047f [label="Application", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_112405811aece71a6ddb1cffe89f047f.html",tooltip=""];
+  dir_fc8ff2a71ca355ed67e337b6aecf538f [label="AssetProvider", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_fc8ff2a71ca355ed67e337b6aecf538f.html",tooltip=""];
+  dir_0b3e2ebcf56ee9470df807b7a7efb44d [label="Calculator", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_0b3e2ebcf56ee9470df807b7a7efb44d.html",tooltip=""];
+  dir_5a1f08321092cb09d288b2256e5afffb [label="Maths", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_5a1f08321092cb09d288b2256e5afffb.html",tooltip=""];
+  dir_9ff46e3e8eefebbb9fa5862443253b97 [label="SaveDataService", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_9ff46e3e8eefebbb9fa5862443253b97.html",tooltip=""];
+  dir_bacbee96f75472d80b9695a981f5a795 [label="UIFactory", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_bacbee96f75472d80b9695a981f5a795.html",tooltip=""];
+  dir_506464f11cfd588dce151314a32521bf [label="WarningService", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_506464f11cfd588dce151314a32521bf.html",tooltip=""];
+  }
+  }
+}

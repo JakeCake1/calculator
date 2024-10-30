@@ -1,0 +1,19 @@
+digraph "_Project.Scripts.Maths.Strategy.CommandExecutionStrategy.ExecuteMathCommand"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="_Project.Scripts.Maths.Strategy.\lCommandExecutionStrategy.ExecuteMath\lCommand",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Метод выполнения математичесой команды"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="_Project.Scripts.Maths.Strategy.\lCommandExecutionStrategy.CheckExpression\lForValid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy.html#ac0996bcbb3a4d9a96fddf42634818389",tooltip="Метод проверки математического выражения на правильный состав"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="_Project.Scripts.Maths.Data.\lExpression.IsValid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression.html#a76788a5a0a5fdcddb694a398ba393ebd",tooltip="Метод проверки структуры математического выражения на валидность"];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="_Project.Scripts.Maths.Command.\lMathCommand.Execute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command.html#ac4769b79346696c0ef9db2d58bbc9591",tooltip="Метод выполнения вычисления"];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="_Project.Scripts.Maths.Command.\lMathCommand.Solve",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command.html#ac41a7bc426e11837401786da23ecef44",tooltip="Метод, опрделяющий ход вычисления"];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="_Project.Scripts.Maths.Strategy.\lCommandExecutionStrategy.LogExpressionError",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy.html#abf1a1930dfaeb6d4a3526ade3083e63a",tooltip="Метод логирования ошибки в ходе вычислений"];
+}

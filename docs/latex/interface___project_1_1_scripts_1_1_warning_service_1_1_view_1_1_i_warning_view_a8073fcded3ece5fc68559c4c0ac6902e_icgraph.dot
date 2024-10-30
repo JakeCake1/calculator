@@ -1,0 +1,11 @@
+digraph "_Project.Scripts.WarningService.View.IWarningView.Init"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="_Project.Scripts.Warning\lService.View.IWarningView.Init",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Метод инициализации вида сервиса окна-предупреждения"];
+  Node1 -> Node2 [id="edge2_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="_Project.Scripts.Warning\lService.WarningServiceLogic.\lInitialize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_warning_service_1_1_warning_service_logic.html#a05bc4f3e21d0015e3d03012828a8038a",tooltip="Метод инициализации сервиса окна-предупреждения"];
+}

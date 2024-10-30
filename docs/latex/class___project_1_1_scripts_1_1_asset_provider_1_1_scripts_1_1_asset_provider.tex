@@ -1,0 +1,142 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+Asset\+Provider Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider}{}\label{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider}\index{\_Project.Scripts.AssetProvider.Scripts.AssetProvider@{\_Project.Scripts.AssetProvider.Scripts.AssetProvider}}
+
+
+Класс поставщик ресурсов  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+Asset\+Provider\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+Asset\+Provider\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Uni\+Task$<$ T $>$ \mbox{\hyperlink{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_ae4b8b21fbc9f524bfa08efe33c0e07dd}{Load$<$ T $>$}} (string address)
+\begin{DoxyCompactList}\small\item\em Метод загрузки ресурса через Addressables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a4fd6b542894c875874a3485b76c77cba}{Release}} (string address)
+\begin{DoxyCompactList}\small\item\em Метод выгрузки ресурса через Addressables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider}{\+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+IAsset\+Provider}}}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a22607327bbf8b52334e7b1c78f915061}{Add\+Handle$<$ T $>$}} (string key, Async\+Operation\+Handle$<$ T $>$ handle)
+\begin{DoxyCompactList}\small\item\em Метод добавления доступа к операции в коллекцию \end{DoxyCompactList}\item 
+async Uni\+Task$<$ T $>$ \mbox{\hyperlink{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_abf750ecc359751c60cc39f40915600b8}{Run\+With\+Cache\+On\+Complete$<$ T $>$}} (Async\+Operation\+Handle$<$ T $>$ handle, string cache\+Key)
+\begin{DoxyCompactList}\small\item\em Метод, вызываемый при завершении операции загрузки ресурса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a21724910aa28fce89313fae1f21dfad4}\label{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a21724910aa28fce89313fae1f21dfad4} 
+readonly Dictionary$<$ string, Async\+Operation\+Handle $>$ {\bfseries \+\_\+complete\+Cache} = new()
+\begin{DoxyCompactList}\small\item\em Коллекция завершенных операций загрузки \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a935318e75590dffebffb6e8efb3625e1}\label{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a935318e75590dffebffb6e8efb3625e1} 
+readonly Dictionary$<$ string, List$<$ Async\+Operation\+Handle $>$ $>$ {\bfseries \+\_\+handles} = new()
+\begin{DoxyCompactList}\small\item\em Коллекция струтур-\/доступов к завершенным операциям загрузки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс поставщик ресурсов 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a22607327bbf8b52334e7b1c78f915061}\index{\_Project.Scripts.AssetProvider.Scripts.AssetProvider@{\_Project.Scripts.AssetProvider.Scripts.AssetProvider}!AddHandle$<$ T $>$@{AddHandle$<$ T $>$}}
+\index{AddHandle$<$ T $>$@{AddHandle$<$ T $>$}!\_Project.Scripts.AssetProvider.Scripts.AssetProvider@{\_Project.Scripts.AssetProvider.Scripts.AssetProvider}}
+\doxysubsubsection{\texorpdfstring{AddHandle$<$ T $>$()}{AddHandle< T >()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a22607327bbf8b52334e7b1c78f915061} 
+void \+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+Asset\+Provider.\+Add\+Handle$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{key}{, }\item[{Async\+Operation\+Handle$<$ T $>$}]{handle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод добавления доступа к операции в коллекцию 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Адресс указывающий на объект ресурса \\
+\hline
+{\em handle} & Структура-\/доступ к завершенной операции \\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+\Hypertarget{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_ae4b8b21fbc9f524bfa08efe33c0e07dd}\index{\_Project.Scripts.AssetProvider.Scripts.AssetProvider@{\_Project.Scripts.AssetProvider.Scripts.AssetProvider}!Load$<$ T $>$@{Load$<$ T $>$}}
+\index{Load$<$ T $>$@{Load$<$ T $>$}!\_Project.Scripts.AssetProvider.Scripts.AssetProvider@{\_Project.Scripts.AssetProvider.Scripts.AssetProvider}}
+\doxysubsubsection{\texorpdfstring{Load$<$ T $>$()}{Load< T >()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_ae4b8b21fbc9f524bfa08efe33c0e07dd} 
+async Uni\+Task$<$ T $>$ \+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+Asset\+Provider.\+Load$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод загрузки ресурса через Addressables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Адресс указывающий на объект ресурса, который нужно загрузить в память \\
+\hline
+{\em T} & -\/ тип ресурса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uni\+Task который можно подождать до завершения процесса загрузки ресурса 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider_ad0fc892ec65d2aa392d931a5cb538d70}{\+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+IAsset\+Provider}}.
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+\Hypertarget{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a4fd6b542894c875874a3485b76c77cba}\index{\_Project.Scripts.AssetProvider.Scripts.AssetProvider@{\_Project.Scripts.AssetProvider.Scripts.AssetProvider}!Release@{Release}}
+\index{Release@{Release}!\_Project.Scripts.AssetProvider.Scripts.AssetProvider@{\_Project.Scripts.AssetProvider.Scripts.AssetProvider}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a4fd6b542894c875874a3485b76c77cba} 
+void \+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+Asset\+Provider.\+Release (\begin{DoxyParamCaption}\item[{string}]{address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод выгрузки ресурса через Addressables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Адресс указывающий на объект ресурса, который нужно выгрузить из памяти \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider_ae3bc4aa037ee78d8a34b73969f853f4c}{\+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+IAsset\+Provider}}.
+
+\Hypertarget{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_abf750ecc359751c60cc39f40915600b8}\index{\_Project.Scripts.AssetProvider.Scripts.AssetProvider@{\_Project.Scripts.AssetProvider.Scripts.AssetProvider}!RunWithCacheOnComplete$<$ T $>$@{RunWithCacheOnComplete$<$ T $>$}}
+\index{RunWithCacheOnComplete$<$ T $>$@{RunWithCacheOnComplete$<$ T $>$}!\_Project.Scripts.AssetProvider.Scripts.AssetProvider@{\_Project.Scripts.AssetProvider.Scripts.AssetProvider}}
+\doxysubsubsection{\texorpdfstring{RunWithCacheOnComplete$<$ T $>$()}{RunWithCacheOnComplete< T >()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_abf750ecc359751c60cc39f40915600b8} 
+async Uni\+Task$<$ T $>$ \+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+Asset\+Provider.\+Run\+With\+Cache\+On\+Complete$<$ T $>$ (\begin{DoxyParamCaption}\item[{Async\+Operation\+Handle$<$ T $>$}]{handle}{, }\item[{string}]{cache\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод, вызываемый при завершении операции загрузки ресурса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & Структура-\/доступ к завершенной операции \\
+\hline
+{\em cache\+Key} & Адресс указывающий на объект ресурса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uni\+Task, который можно подождать до завершения процесса загрузки ресурса 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Asset\+Provider/\+Scripts/Asset\+Provider.\+cs\end{DoxyCompactItemize}

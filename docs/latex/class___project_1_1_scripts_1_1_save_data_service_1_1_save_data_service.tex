@@ -1,0 +1,121 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Data\+Service Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service}{}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service}\index{\_Project.Scripts.SaveDataService.SaveDataService@{\_Project.Scripts.SaveDataService.SaveDataService}}
+
+
+Класс, отвечающий за работу с сохраненными данными  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Data\+Service\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Data\+Service\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a5f946003059559a42faf2c836799c24d}{Save\+Data\+Service}} (\mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy}{Base\+Save\+Strategy}} save\+Strategy, \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader}{IData\+Loader}} data\+Loader)
+\begin{DoxyCompactList}\small\item\em Конструктор сервиса сохранения \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a31914ec366acde0ef53bec7cec2926a2}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a31914ec366acde0ef53bec7cec2926a2} 
+void {\bfseries Load} ()
+\begin{DoxyCompactList}\small\item\em Метод загрузки сохраненных данных \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a8c5280e45865ee8c20a1976ca6fd4767}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a8c5280e45865ee8c20a1976ca6fd4767} 
+void {\bfseries Write} ()
+\begin{DoxyCompactList}\small\item\em Метод записи данных в файлы/классы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a6bb96d38f434c180f53fa75401e890fb}{Save}} (string sub\+File, string key, object value)
+\begin{DoxyCompactList}\small\item\em Метод сохранения значения \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a4e0412bbc6f2b3c19b7928334450be96}{Get$<$ T $>$}} (string sub\+File, string key)
+\begin{DoxyCompactList}\small\item\em Метод получения значения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+ISave\+Data\+Service}}}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a4eb9401f5d4f9fab2f40ab7814c4b1f9}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a4eb9401f5d4f9fab2f40ab7814c4b1f9} 
+readonly Dictionary$<$ string, Dictionary$<$ string, object $>$ $>$ {\bfseries \+\_\+saved\+Values} = new()
+\begin{DoxyCompactList}\small\item\em Коллекция сохраненных значений \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a2dc4cd2b2047e85145c3b3b13969cd4f}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a2dc4cd2b2047e85145c3b3b13969cd4f} 
+readonly \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy}{Base\+Save\+Strategy}} {\bfseries \+\_\+save\+Strategy}
+\begin{DoxyCompactList}\small\item\em Алгоритм сохранения данных \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a68248f90f89a8b7fb438341980f6e5e5}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a68248f90f89a8b7fb438341980f6e5e5} 
+readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader}{IData\+Loader}} {\bfseries \+\_\+data\+Loader}
+\begin{DoxyCompactList}\small\item\em Загрузчик сохраненных данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отвечающий за работу с сохраненными данными 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a5f946003059559a42faf2c836799c24d}\index{\_Project.Scripts.SaveDataService.SaveDataService@{\_Project.Scripts.SaveDataService.SaveDataService}!SaveDataService@{SaveDataService}}
+\index{SaveDataService@{SaveDataService}!\_Project.Scripts.SaveDataService.SaveDataService@{\_Project.Scripts.SaveDataService.SaveDataService}}
+\doxysubsubsection{\texorpdfstring{SaveDataService()}{SaveDataService()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a5f946003059559a42faf2c836799c24d} 
+\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Data\+Service.\+Save\+Data\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy}{Base\+Save\+Strategy}}}]{save\+Strategy}{, }\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_data_loader}{IData\+Loader}}}]{data\+Loader}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор сервиса сохранения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Strategy} & Алгоритм сохранения данных \\
+\hline
+{\em data\+Loader} & Загрузчик сохраненных данных \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a4e0412bbc6f2b3c19b7928334450be96}\index{\_Project.Scripts.SaveDataService.SaveDataService@{\_Project.Scripts.SaveDataService.SaveDataService}!Get$<$ T $>$@{Get$<$ T $>$}}
+\index{Get$<$ T $>$@{Get$<$ T $>$}!\_Project.Scripts.SaveDataService.SaveDataService@{\_Project.Scripts.SaveDataService.SaveDataService}}
+\doxysubsubsection{\texorpdfstring{Get$<$ T $>$()}{Get< T >()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a4e0412bbc6f2b3c19b7928334450be96} 
+T \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Data\+Service.\+Get$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{sub\+File}{, }\item[{string}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод получения значения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+File} & Ключ файла для сохранения \\
+\hline
+{\em key} & Ключ значения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение по переданному типу 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_af53cb99ceffecc16a49c05bf1d3eeb12}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+ISave\+Data\+Service}}.
+
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a6bb96d38f434c180f53fa75401e890fb}\index{\_Project.Scripts.SaveDataService.SaveDataService@{\_Project.Scripts.SaveDataService.SaveDataService}!Save@{Save}}
+\index{Save@{Save}!\_Project.Scripts.SaveDataService.SaveDataService@{\_Project.Scripts.SaveDataService.SaveDataService}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service_a6bb96d38f434c180f53fa75401e890fb} 
+void \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Data\+Service.\+Save (\begin{DoxyParamCaption}\item[{string}]{sub\+File}{, }\item[{string}]{key}{, }\item[{object}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод сохранения значения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+File} & Ключ файла для сохранения \\
+\hline
+{\em key} & Ключ значения \\
+\hline
+{\em value} & Значение \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service_a8d36927cad7e9f1344da45fccd8bbca7}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Interfaces.\+ISave\+Data\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Save\+Data\+Service/Save\+Data\+Service.\+cs\end{DoxyCompactItemize}
