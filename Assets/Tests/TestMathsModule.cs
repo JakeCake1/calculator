@@ -7,6 +7,8 @@ using VContainer.Unity;
 
 namespace Tests
 {
+  /// \class TestMathsModule
+  /// \brief Класс для тестирования математической логики
   [TestFixture]
   public class TestMathsModule
   {
