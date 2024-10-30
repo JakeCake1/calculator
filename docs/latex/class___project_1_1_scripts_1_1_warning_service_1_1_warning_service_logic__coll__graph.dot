@@ -1,0 +1,19 @@
+digraph "_Project.Scripts.WarningService.WarningServiceLogic"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="_Project.Scripts.Warning\lService.WarningServiceLogic",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Класс, отвечающий за появление окна-предупреждения"];
+  Node2 -> Node1 [id="edge6_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="IWarningService",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service.html",tooltip="Интерфейс, отвечающий за появление окна-предупреждения"];
+  Node3 -> Node1 [id="edge7_Node000001_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _warningUIFactory",fontcolor="grey" ];
+  Node3 [id="Node000003",label="_Project.Scripts.Warning\lService.Factories.IWarningUIFactory",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_warning_service_1_1_factories_1_1_i_warning_u_i_factory.html",tooltip="Интерфейс, описывающий методы создания и уничтожения объектов UI сервиса окна-предупреждения"];
+  Node4 -> Node1 [id="edge8_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _warningServicePresenter",fontcolor="grey" ];
+  Node4 [id="Node000004",label="_Project.Scripts.Warning\lService.Presenter.IWarningService\lPresenter",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_warning_service_1_1_presenter_1_1_i_warning_service_presenter.html",tooltip="Интерфейс, описывающий презентер сервиса окна-предупреждения"];
+  Node5 -> Node1 [id="edge9_Node000001_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _warningServiceModel",fontcolor="grey" ];
+  Node5 [id="Node000005",label="_Project.Scripts.Warning\lService.Model.IWarningServiceModel",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_warning_service_1_1_model_1_1_i_warning_service_model.html",tooltip="Интерфейс, описывающий модель данных и состояния сервиса окна-предупреждения"];
+  Node6 -> Node1 [id="edge10_Node000001_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _warningWindowView",fontcolor="grey" ];
+  Node6 [id="Node000006",label="_Project.Scripts.Warning\lService.View.IWarningView",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_warning_service_1_1_view_1_1_i_warning_view.html",tooltip="Интерфейс, описывающий вид сервиса окна-предупреждения"];
+}

@@ -1,0 +1,78 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Warning\+Service.\+IWarning\+Service Interface Reference}
+\hypertarget{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service}{}\label{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service}\index{\_Project.Scripts.WarningService.IWarningService@{\_Project.Scripts.WarningService.IWarningService}}
+
+
+Интерфейс, отвечающий за появление окна-\/предупреждения  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Warning\+Service.\+IWarning\+Service\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Uni\+Task \mbox{\hyperlink{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_aa1b787becbfb7256cf27a532e2febe85}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Метод инициализации сервиса окна-\/предупреждения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_aeb775d3eca6578966f504971b8f35125}{Open\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Метод активации/скрытия окна-\/предупреждения \end{DoxyCompactList}\item 
+\Hypertarget{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_a82260f225f6b7bf3ddb7cce1ae0d5526}\label{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_a82260f225f6b7bf3ddb7cce1ae0d5526} 
+void {\bfseries Quit} ()
+\begin{DoxyCompactList}\small\item\em Метод завершения и очистки сервиса окна-\/предупреждения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_a586e0be1335b17bd3b7d68a70325f6e5}\label{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_a586e0be1335b17bd3b7d68a70325f6e5} 
+Action {\bfseries On\+Close\+Window}
+\begin{DoxyCompactList}\small\item\em Ивент закрытия окна \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Интерфейс, отвечающий за появление окна-\/предупреждения 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_aa1b787becbfb7256cf27a532e2febe85}\index{\_Project.Scripts.WarningService.IWarningService@{\_Project.Scripts.WarningService.IWarningService}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!\_Project.Scripts.WarningService.IWarningService@{\_Project.Scripts.WarningService.IWarningService}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_aa1b787becbfb7256cf27a532e2febe85} 
+Uni\+Task \+\_\+\+Project.\+Scripts.\+Warning\+Service.\+IWarning\+Service.\+Initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Метод инициализации сервиса окна-\/предупреждения 
+
+\begin{DoxyReturn}{Returns}
+Uni\+Task который можно подождать до завершения процесса инициализации 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_warning_service_1_1_warning_service_logic_a05bc4f3e21d0015e3d03012828a8038a}{\+\_\+\+Project.\+Scripts.\+Warning\+Service.\+Warning\+Service\+Logic}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_aeb775d3eca6578966f504971b8f35125}\index{\_Project.Scripts.WarningService.IWarningService@{\_Project.Scripts.WarningService.IWarningService}!OpenWindow@{OpenWindow}}
+\index{OpenWindow@{OpenWindow}!\_Project.Scripts.WarningService.IWarningService@{\_Project.Scripts.WarningService.IWarningService}}
+\doxysubsubsection{\texorpdfstring{OpenWindow()}{OpenWindow()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_warning_service_1_1_i_warning_service_aeb775d3eca6578966f504971b8f35125} 
+void \+\_\+\+Project.\+Scripts.\+Warning\+Service.\+IWarning\+Service.\+Open\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Метод активации/скрытия окна-\/предупреждения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Active} & Параметр true/false. Если true -\/ вид отображается, false -\/ вид скрыт \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_warning_service_1_1_warning_service_logic_a04fe7416f2ecaa95b77d43b34f8e1faa}{\+\_\+\+Project.\+Scripts.\+Warning\+Service.\+Warning\+Service\+Logic}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Warning\+Service/IWarning\+Service.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Maths.\+Maths Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_maths_1_1_maths}{}\label{class___project_1_1_scripts_1_1_maths_1_1_maths}\index{\_Project.Scripts.Maths.Maths@{\_Project.Scripts.Maths.Maths}}
+
+
+Класс, отвечающий за взаимодействие с логикой математических вычислений  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Maths\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Maths\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_maths_a4c2f4e07ce565fd1f4807c0139b7b0f8}{Maths}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_i_command_validation_wrapper}{ICommand\+Validation\+Wrapper}} command\+Validation\+Wrapper)
+\begin{DoxyCompactList}\small\item\em Конструктор логики математических вычислений \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_maths_a0f5fb0c26fd168cd0e1ab7297f1d8d35}{Try\+Execute\+Expression}} (string expression, out \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}} command)
+\begin{DoxyCompactList}\small\item\em Метод запуска математических вычислений \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_i_maths}{\+\_\+\+Project.\+Scripts.\+Maths.\+IMaths}}}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_maths_aba45a15c51d16769ed725e9a0bc95e38}\label{class___project_1_1_scripts_1_1_maths_1_1_maths_aba45a15c51d16769ed725e9a0bc95e38} 
+readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_i_command_validation_wrapper}{ICommand\+Validation\+Wrapper}} {\bfseries \+\_\+command\+Validation\+Wrapper}
+\begin{DoxyCompactList}\small\item\em command\+Validation\+Wrapper Обертка, выполняющая проверку выражения на корректность \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отвечающий за взаимодействие с логикой математических вычислений 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_maths_a4c2f4e07ce565fd1f4807c0139b7b0f8}\index{\_Project.Scripts.Maths.Maths@{\_Project.Scripts.Maths.Maths}!Maths@{Maths}}
+\index{Maths@{Maths}!\_Project.Scripts.Maths.Maths@{\_Project.Scripts.Maths.Maths}}
+\doxysubsubsection{\texorpdfstring{Maths()}{Maths()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_maths_a4c2f4e07ce565fd1f4807c0139b7b0f8} 
+\+\_\+\+Project.\+Scripts.\+Maths.\+Maths.\+Maths (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_i_command_validation_wrapper}{ICommand\+Validation\+Wrapper}}}]{command\+Validation\+Wrapper}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор логики математических вычислений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Validation\+Wrapper} & Обертка, выполняющая проверку выражения на корректность \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_maths_a0f5fb0c26fd168cd0e1ab7297f1d8d35}\index{\_Project.Scripts.Maths.Maths@{\_Project.Scripts.Maths.Maths}!TryExecuteExpression@{TryExecuteExpression}}
+\index{TryExecuteExpression@{TryExecuteExpression}!\_Project.Scripts.Maths.Maths@{\_Project.Scripts.Maths.Maths}}
+\doxysubsubsection{\texorpdfstring{TryExecuteExpression()}{TryExecuteExpression()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_maths_a0f5fb0c26fd168cd0e1ab7297f1d8d35} 
+bool \+\_\+\+Project.\+Scripts.\+Maths.\+Maths.\+Try\+Execute\+Expression (\begin{DoxyParamCaption}\item[{string}]{expression}{, }\item[{out \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}}}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Метод запуска математических вычислений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Строка с математическим выражением \\
+\hline
+{\em command} & Математическая команда, сгенерированная в ходе вычислений \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Флаг успешности вычисления\+: true -\/ вычисление произошло успешно, false -\/ произошла ошибка 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_i_maths_aedfade40f270e416913d49a06f6de8ca}{\+\_\+\+Project.\+Scripts.\+Maths.\+IMaths}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Maths/Maths.\+cs\end{DoxyCompactItemize}

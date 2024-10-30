@@ -1,0 +1,81 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Maths.\+Data.\+Available\+Math\+Commands Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands}{}\label{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands}\index{\_Project.Scripts.Maths.Data.AvailableMathCommands@{\_Project.Scripts.Maths.Data.AvailableMathCommands}}
+
+
+Класс-\/коллекция доступных математических команд  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Data.\+Available\+Math\+Commands\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Data.\+Available\+Math\+Commands\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands_a5fac0b691cb40266a7e7f3cbf5f8330d}{Try\+Get\+Value}} (string expression\+Operator, out Type type)
+\begin{DoxyCompactList}\small\item\em Метод получения типа математической операции \end{DoxyCompactList}\item 
+IEnumerable$<$ string $>$ \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands_a63fbee3e25bcc8c8dcfc75bbd3e0b2b0}{Get\+Commands\+Keys}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения списка доступных символов-\/операторов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{\+\_\+\+Project.\+Scripts.\+Maths.\+Data.\+IAvailable\+Math\+Commands}}}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands_ac769503ed877bba701a69e37b7623cc0}\label{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands_ac769503ed877bba701a69e37b7623cc0} 
+readonly Dictionary$<$ string, Type $>$ {\bfseries \+\_\+available\+Commands}
+\begin{DoxyCompactList}\small\item\em Коллекция доступных математических команд \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/коллекция доступных математических команд 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands_a63fbee3e25bcc8c8dcfc75bbd3e0b2b0}\index{\_Project.Scripts.Maths.Data.AvailableMathCommands@{\_Project.Scripts.Maths.Data.AvailableMathCommands}!GetCommandsKeys@{GetCommandsKeys}}
+\index{GetCommandsKeys@{GetCommandsKeys}!\_Project.Scripts.Maths.Data.AvailableMathCommands@{\_Project.Scripts.Maths.Data.AvailableMathCommands}}
+\doxysubsubsection{\texorpdfstring{GetCommandsKeys()}{GetCommandsKeys()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands_a63fbee3e25bcc8c8dcfc75bbd3e0b2b0} 
+IEnumerable$<$ string $>$ \+\_\+\+Project.\+Scripts.\+Maths.\+Data.\+Available\+Math\+Commands.\+Get\+Commands\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Метод получения списка доступных символов-\/операторов 
+
+\begin{DoxyReturn}{Returns}
+Коллекция доступных операторов 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands_a538165e405239c25e25ed006cd5204cb}{\+\_\+\+Project.\+Scripts.\+Maths.\+Data.\+IAvailable\+Math\+Commands}}.
+
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands_a5fac0b691cb40266a7e7f3cbf5f8330d}\index{\_Project.Scripts.Maths.Data.AvailableMathCommands@{\_Project.Scripts.Maths.Data.AvailableMathCommands}!TryGetValue@{TryGetValue}}
+\index{TryGetValue@{TryGetValue}!\_Project.Scripts.Maths.Data.AvailableMathCommands@{\_Project.Scripts.Maths.Data.AvailableMathCommands}}
+\doxysubsubsection{\texorpdfstring{TryGetValue()}{TryGetValue()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_data_1_1_available_math_commands_a5fac0b691cb40266a7e7f3cbf5f8330d} 
+bool \+\_\+\+Project.\+Scripts.\+Maths.\+Data.\+Available\+Math\+Commands.\+Try\+Get\+Value (\begin{DoxyParamCaption}\item[{string}]{expression\+Operator}{, }\item[{out Type}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Метод получения типа математической операции 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression\+Operator} & Оператор, обозначающий математическую операцию \\
+\hline
+{\em type} & Тип математической операции \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Флаг успешности получения типа математической операции 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands_a6868b73e3c4faf5e1a89c0b643656d51}{\+\_\+\+Project.\+Scripts.\+Maths.\+Data.\+IAvailable\+Math\+Commands}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Maths/\+Data/Available\+Math\+Commands.\+cs\end{DoxyCompactItemize}

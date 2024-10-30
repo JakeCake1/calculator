@@ -1,0 +1,86 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+Command\+Validation\+Wrapper Interface Reference}
+\hypertarget{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper}{}\label{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper}\index{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper@{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper}}
+
+
+Класс, отвечающий за первичную проверку введенных выражений на корректность ~\newline
+  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+Command\+Validation\+Wrapper\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+Command\+Validation\+Wrapper\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_af20b8ae04518b8ba35221843d7be2f14}{Command\+Validation\+Wrapper}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy}{ICommand\+Execution\+Strategy}} command\+Execution\+Strategy)
+\begin{DoxyCompactList}\small\item\em Конструктор обертки проверки \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_a92c6852b0e952362b13677eee2f3d0d6}{Try\+Execute\+Expression}} (string expression, out \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}} command)
+\begin{DoxyCompactList}\small\item\em Метод запуска математических вычислений \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_i_command_validation_wrapper}{\+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+ICommand\+Validation\+Wrapper}}}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_ac2bf536c9609a0bc7545dc38c585d90d}\label{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_ac2bf536c9609a0bc7545dc38c585d90d} 
+readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy}{ICommand\+Execution\+Strategy}} {\bfseries \+\_\+command\+Execution\+Strategy}
+\begin{DoxyCompactList}\small\item\em Объект, выполняющий вычисление по алгоритму \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отвечающий за первичную проверку введенных выражений на корректность ~\newline
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_af20b8ae04518b8ba35221843d7be2f14}\index{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper@{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper}!CommandValidationWrapper@{CommandValidationWrapper}}
+\index{CommandValidationWrapper@{CommandValidationWrapper}!\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper@{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper}}
+\doxysubsubsection{\texorpdfstring{CommandValidationWrapper()}{CommandValidationWrapper()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_af20b8ae04518b8ba35221843d7be2f14} 
+\+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+Command\+Validation\+Wrapper.\+Command\+Validation\+Wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy}{ICommand\+Execution\+Strategy}}}]{command\+Execution\+Strategy}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор обертки проверки 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Execution\+Strategy} & Объект, выполняющий вычисление по алгоритму \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_a92c6852b0e952362b13677eee2f3d0d6}\index{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper@{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper}!TryExecuteExpression@{TryExecuteExpression}}
+\index{TryExecuteExpression@{TryExecuteExpression}!\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper@{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper}}
+\doxysubsubsection{\texorpdfstring{TryExecuteExpression()}{TryExecuteExpression()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_a92c6852b0e952362b13677eee2f3d0d6} 
+bool \+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+Command\+Validation\+Wrapper.\+Try\+Execute\+Expression (\begin{DoxyParamCaption}\item[{string}]{expression}{, }\item[{out \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}}}]{command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод запуска математических вычислений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Строка с математическим выражением \\
+\hline
+{\em command} & Математическая команда, сгенерированная в ходе вычислений \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Флаг успешности вычисления\+: true -\/ вычисление произошло успешно, false -\/ произошла ошибка 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_i_command_validation_wrapper_a707c3669432d99c88a604ec6f7266c0a}{\+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+ICommand\+Validation\+Wrapper}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Maths/\+Wrapper/Command\+Validation\+Wrapper.\+cs\end{DoxyCompactItemize}

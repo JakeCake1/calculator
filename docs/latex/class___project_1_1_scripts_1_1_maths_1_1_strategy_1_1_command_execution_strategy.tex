@@ -1,0 +1,166 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+Command\+Execution\+Strategy Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy}{}\label{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy}\index{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}}
+
+
+Класс, отвечающий за выполнение математических операций  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+Command\+Execution\+Strategy\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+Command\+Execution\+Strategy\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_ac83bf5b12009c86fd9c9e79c1fab99d9}{Command\+Execution\+Strategy}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}} available\+Math\+Commands, \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_factory_1_1_i_expression_factory}{IExpression\+Factory}} expression\+Factory)
+\begin{DoxyCompactList}\small\item\em Конструктор логики математических вычислений \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_ad40338fb708657e3563cb78603525c93}{Try\+Solve\+Expression}} (string expression\+String, out \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}} math\+Command)
+\begin{DoxyCompactList}\small\item\em Метод запуска математических вычислений \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy}{\+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+ICommand\+Execution\+Strategy}}}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}} \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_a4c3229c5de393facb41978d549286e28}{Define\+Math\+Command}} (\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}} expression)
+\begin{DoxyCompactList}\small\item\em Метод создания математичесой команды для введнного выражения \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_a9d42b1acf20864dd62f8efc1e69c03f0}{Execute\+Math\+Command}} (\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}} expression, \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}} command)
+\begin{DoxyCompactList}\small\item\em Метод выполнения математичесой команды \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_ac0996bcbb3a4d9a96fddf42634818389}{Check\+Expression\+For\+Valid}} (\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}} expression)
+\begin{DoxyCompactList}\small\item\em Метод проверки математического выражения на правильный состав \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_abf1a1930dfaeb6d4a3526ade3083e63a}\label{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_abf1a1930dfaeb6d4a3526ade3083e63a} 
+void {\bfseries Log\+Expression\+Error} ()
+\begin{DoxyCompactList}\small\item\em Метод логирования ошибки в ходе вычислений \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_af25d33afa48f44594d784b2d9f712eb2}\label{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_af25d33afa48f44594d784b2d9f712eb2} 
+readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}} {\bfseries \+\_\+available\+Math\+Commands}
+\begin{DoxyCompactList}\small\item\em Коллекция доступных математических операций \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_aa23170ae670ff6da1a8e7d726b000889}\label{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_aa23170ae670ff6da1a8e7d726b000889} 
+readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_factory_1_1_i_expression_factory}{IExpression\+Factory}} {\bfseries \+\_\+expression\+Factory}
+\begin{DoxyCompactList}\small\item\em Фабрика создания объектов выражений \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отвечающий за выполнение математических операций 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_ac83bf5b12009c86fd9c9e79c1fab99d9}\index{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}!CommandExecutionStrategy@{CommandExecutionStrategy}}
+\index{CommandExecutionStrategy@{CommandExecutionStrategy}!\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}}
+\doxysubsubsection{\texorpdfstring{CommandExecutionStrategy()}{CommandExecutionStrategy()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_ac83bf5b12009c86fd9c9e79c1fab99d9} 
+\+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+Command\+Execution\+Strategy.\+Command\+Execution\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}}}]{available\+Math\+Commands}{, }\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_factory_1_1_i_expression_factory}{IExpression\+Factory}}}]{expression\+Factory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор логики математических вычислений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em available\+Math\+Commands} & Коллекция доступных математических операций \\
+\hline
+{\em expression\+Factory} & Фабрика создания объектов выражений \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_ac0996bcbb3a4d9a96fddf42634818389}\index{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}!CheckExpressionForValid@{CheckExpressionForValid}}
+\index{CheckExpressionForValid@{CheckExpressionForValid}!\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}}
+\doxysubsubsection{\texorpdfstring{CheckExpressionForValid()}{CheckExpressionForValid()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_ac0996bcbb3a4d9a96fddf42634818389} 
+bool \+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+Command\+Execution\+Strategy.\+Check\+Expression\+For\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}}}]{expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод проверки математического выражения на правильный состав 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Структура выражения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Флаг валидности выражения\+: true -\/ выражение имеет форму \mbox{[}Операнд1\mbox{]}+\mbox{[}Операнд2\mbox{]}, false -\/ форма не соответствует 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_a4c3229c5de393facb41978d549286e28}\index{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}!DefineMathCommand@{DefineMathCommand}}
+\index{DefineMathCommand@{DefineMathCommand}!\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}}
+\doxysubsubsection{\texorpdfstring{DefineMathCommand()}{DefineMathCommand()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_a4c3229c5de393facb41978d549286e28} 
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}} \+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+Command\+Execution\+Strategy.\+Define\+Math\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}}}]{expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод создания математичесой команды для введнного выражения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Структура выражения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+math\+Command Математическая команда, сгенерированная в ходе подбора подходящей команды для вычисления выражения 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_a9d42b1acf20864dd62f8efc1e69c03f0}\index{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}!ExecuteMathCommand@{ExecuteMathCommand}}
+\index{ExecuteMathCommand@{ExecuteMathCommand}!\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}}
+\doxysubsubsection{\texorpdfstring{ExecuteMathCommand()}{ExecuteMathCommand()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_a9d42b1acf20864dd62f8efc1e69c03f0} 
+bool \+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+Command\+Execution\+Strategy.\+Execute\+Math\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct___project_1_1_scripts_1_1_maths_1_1_data_1_1_expression}{Expression}}}]{expression}{, }\item[{\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}}}]{command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Метод выполнения математичесой команды 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Структура выражения \\
+\hline
+{\em command} & Математическая команда, сгенерированная в ходе подбора подходящей команды для вычисления выражения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Флаг успешности вычисления\+: true -\/ вычисление произошло успешно, false -\/ произошла ошибка 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_ad40338fb708657e3563cb78603525c93}\index{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}!TrySolveExpression@{TrySolveExpression}}
+\index{TrySolveExpression@{TrySolveExpression}!\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy@{\_Project.Scripts.Maths.Strategy.CommandExecutionStrategy}}
+\doxysubsubsection{\texorpdfstring{TrySolveExpression()}{TrySolveExpression()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy_ad40338fb708657e3563cb78603525c93} 
+void \+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+Command\+Execution\+Strategy.\+Try\+Solve\+Expression (\begin{DoxyParamCaption}\item[{string}]{expression\+String}{, }\item[{out \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}}}]{math\+Command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод запуска математических вычислений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression\+String} & Строка с математическим выражением \\
+\hline
+{\em math\+Command} & Математическая команда, сгенерированная в ходе вычислений \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy_a48030d9bef636eb0cabc02c92b7562b3}{\+\_\+\+Project.\+Scripts.\+Maths.\+Strategy.\+ICommand\+Execution\+Strategy}}.
+
+Here is the call graph for this function\+:
+% FIG 8
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Maths/\+Strategy/Command\+Execution\+Strategy.\+cs\end{DoxyCompactItemize}

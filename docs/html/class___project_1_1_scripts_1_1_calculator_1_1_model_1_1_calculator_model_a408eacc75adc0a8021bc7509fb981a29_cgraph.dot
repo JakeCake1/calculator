@@ -1,0 +1,28 @@
+digraph "_Project.Scripts.Calculator.Model.CalculatorModel.AddSolution"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="_Project.Scripts.Calculator.\lModel.CalculatorModel.AddSolution",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Метод добавления решения в историю"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="_Project.Scripts.Maths.Command.\lMathCommand.GetResult",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command.html#a655ed937ad1e04f12eac683e743008f4",tooltip="Метод получения результата вычисления"];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="_Project.Scripts.SaveData\lService.Collections.Persistent\lStack.Push",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack.html#a12d7094494f33c6ef16767ad36405028",tooltip="Метод вставки в стек"];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="_Project.Scripts.SaveData\lService.Collections.Persistent\lStack.IsInitialized",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack.html#a819a3c534f533fd1dac6fe3df857a8b1",tooltip="Метод получения флага инициализации"];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="_Project.Scripts.SaveData\lService.Collections.Persistent\lStack.WriteStack",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack.html#a72b22fa23435b896dfa3dc1e175d8a9a",tooltip="Метод записи значений в стек"];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="_Project.Scripts.SaveData\lService.Interfaces.ISaveDataService.Save",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service.html#a8d36927cad7e9f1344da45fccd8bbca7",tooltip="Метод сохранения значения"];
+  Node5 -> Node7 [id="edge6_Node000005_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="_Project.Scripts.SaveData\lService.Interfaces.ISaveDataService.Write",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_save_data_service_1_1_interfaces_1_1_i_save_data_service.html#a812aeeeb56eac6ff036ffc4169d32a58",tooltip="Метод записи данных в файлы/классы"];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="_Project.Scripts.Calculator.\lModel.CalculatorModel.UpdateHistory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_calculator_1_1_model_1_1_calculator_model.html#a9e97af421ae5b84c2cefa7dca21b43c5",tooltip="Метод обновления истории калькулятора"];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="_Project.Scripts.Calculator.\lView.ICalculatorMainView.SetHistory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_calculator_1_1_view_1_1_i_calculator_main_view.html#aed3f7aa338904b81efc806d434a249bf",tooltip="Метод записи истории математических вычислений в скролл UI."];
+  Node8 -> Node10 [id="edge9_Node000008_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="_Project.Scripts.SaveData\lService.Collections.Persistent\lStack.ToArray",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack.html#ac3c9cd965da563752d6f68928ed85976",tooltip="Метод получения массива значений из стека"];
+  Node10 -> Node4 [id="edge10_Node000010_Node000004",color="steelblue1",style="solid",tooltip=" "];
+}

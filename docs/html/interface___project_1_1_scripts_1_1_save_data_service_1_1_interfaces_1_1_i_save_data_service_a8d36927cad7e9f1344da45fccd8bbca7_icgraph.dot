@@ -1,0 +1,23 @@
+digraph "_Project.Scripts.SaveDataService.Interfaces.ISaveDataService.Save"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="_Project.Scripts.SaveData\lService.Interfaces.ISaveDataService.Save",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Метод сохранения значения"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="_Project.Scripts.Calculator.\lModel.CalculatorModel.SetInputExpression",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_calculator_1_1_model_1_1_calculator_model.html#acc625dd15554b120638105a1d82b60dc",tooltip="Метод записи в модель данных из строки ввода"];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="_Project.Scripts.SaveData\lService.Collections.Persistent\lStack.WriteStack",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack.html#a72b22fa23435b896dfa3dc1e175d8a9a",tooltip="Метод записи значений в стек"];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="_Project.Scripts.SaveData\lService.Collections.Persistent\lStack.Clear",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack.html#a4f574457214b4eee732f3637640bc720",tooltip="Метод очистки стека"];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="_Project.Scripts.SaveData\lService.Collections.Persistent\lStack.Pop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack.html#a96a09e233c2884634c114590c514f27b",tooltip="Метод удаления из стека"];
+  Node3 -> Node6 [id="edge5_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="_Project.Scripts.SaveData\lService.Collections.Persistent\lStack.Push",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_collections_1_1_persistent_stack.html#a12d7094494f33c6ef16767ad36405028",tooltip="Метод вставки в стек"];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="_Project.Scripts.Calculator.\lModel.CalculatorModel.AddErrorSolution",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_calculator_1_1_model_1_1_calculator_model.html#a612d1241f5cd9917bc2904e78bb4686d",tooltip="Метод добавления ошибочного решения в историю"];
+  Node6 -> Node8 [id="edge7_Node000006_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="_Project.Scripts.Calculator.\lModel.CalculatorModel.AddSolution",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_calculator_1_1_model_1_1_calculator_model.html#a408eacc75adc0a8021bc7509fb981a29",tooltip="Метод добавления решения в историю"];
+}

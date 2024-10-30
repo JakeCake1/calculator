@@ -1,0 +1,11 @@
+digraph "_Project.Scripts.SaveDataService.BaseSaveStrategy.Write"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="_Project.Scripts.SaveData\lService.BaseSaveStrategy.Write",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Метод записи коллекции сохраненных значений"];
+  Node1 -> Node2 [id="edge2_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="_Project.Scripts.SaveData\lService.SaveDataService.Write",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_save_data_service_1_1_save_data_service.html#a8c5280e45865ee8c20a1976ca6fd4767",tooltip="Метод записи данных в файлы/классы"];
+}

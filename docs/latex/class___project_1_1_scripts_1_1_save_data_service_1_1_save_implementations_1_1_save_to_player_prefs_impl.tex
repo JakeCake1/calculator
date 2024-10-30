@@ -1,0 +1,89 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+Player\+Prefs\+Impl Class Reference}
+\hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl}{}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl}\index{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl}}
+
+
+Класс, отвечающий за сохранение данных в Player\+Prefs ~\newline
+  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+Player\+Prefs\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+Player\+Prefs\+Impl\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override Dictionary$<$ string, string $>$ \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_a72b4e468caab76602847f6a65f26ef07}{Load}} ()
+\begin{DoxyCompactList}\small\item\em Метод загрузки коллекции сохраненных значений \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_ac43c8e58ea58a49607068d837e27b21a}{Write}} (string file\+Key, string content)
+\begin{DoxyCompactList}\small\item\em Метод записи коллекции сохраненных значений \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy}{\+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Base\+Save\+Strategy}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy_a14f37f3ea5d18b9794bc5c87769a86b7}{Load}} ()
+\begin{DoxyCompactList}\small\item\em Метод загрузки коллекции сохраненных значений \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class___project_1_1_scripts_1_1_save_data_service_1_1_base_save_strategy_aacb53050420afca5ecade15ff9f0203f}{Write}} (string file\+Key, string content)
+\begin{DoxyCompactList}\small\item\em Метод записи коллекции сохраненных значений \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_a9bbba498a3e59e9d8e0e500c5d66fce1}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_a9bbba498a3e59e9d8e0e500c5d66fce1} 
+List$<$ string $>$ {\bfseries \+\_\+key\+List}
+\begin{DoxyCompactList}\small\item\em Ключи для сохранения JSON строк \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_a12e6017aad14708e36427a465342b628}\label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_a12e6017aad14708e36427a465342b628} 
+const string {\bfseries Player\+Prefs\+Keys} = "{}.Player\+Prefs\+Keys"{}
+\begin{DoxyCompactList}\small\item\em Ключ для сохранения коллекции JSON строк \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отвечающий за сохранение данных в Player\+Prefs ~\newline
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_a72b4e468caab76602847f6a65f26ef07}\index{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl}!Load@{Load}}
+\index{Load@{Load}!\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_a72b4e468caab76602847f6a65f26ef07} 
+override Dictionary$<$ string, string $>$ \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+Player\+Prefs\+Impl.\+Load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод загрузки коллекции сохраненных значений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & Строка в JSON формате \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Коллекция сохраненных значений 
+\end{DoxyReturn}
+\Hypertarget{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_ac43c8e58ea58a49607068d837e27b21a}\index{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl}!Write@{Write}}
+\index{Write@{Write}!\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl@{\_Project.Scripts.SaveDataService.SaveImplementations.SaveToPlayerPrefsImpl}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_save_data_service_1_1_save_implementations_1_1_save_to_player_prefs_impl_ac43c8e58ea58a49607068d837e27b21a} 
+override void \+\_\+\+Project.\+Scripts.\+Save\+Data\+Service.\+Save\+Implementations.\+Save\+To\+Player\+Prefs\+Impl.\+Write (\begin{DoxyParamCaption}\item[{string}]{file\+Key}{, }\item[{string}]{content}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод записи коллекции сохраненных значений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Key} & Ключ файла для сохранения \\
+\hline
+{\em content} & Строка в JSON формате \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Save\+Data\+Service/\+Save\+Implementations/Save\+To\+Player\+Prefs\+Impl.\+cs\end{DoxyCompactItemize}

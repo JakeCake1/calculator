@@ -6,8 +6,11 @@ using VContainer.Unity;
 
 namespace _Project.Scripts.Calculator
 {
+  /// \class CalculatorInstaller
+  /// \brief Класс, отвечающий за инъекцию логики калькулятора в приложение
   public class CalculatorInstaller : IInstaller
   {
+    /// \brief Метод конфигурации зависимостей логики калькулятора
     public void Install(IContainerBuilder builder)
     {
       builder.Register<ICalculatorModel, CalculatorModel>(Lifetime.Scoped);

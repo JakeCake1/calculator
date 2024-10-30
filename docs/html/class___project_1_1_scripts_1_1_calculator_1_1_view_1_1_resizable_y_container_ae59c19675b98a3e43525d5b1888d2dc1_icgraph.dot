@@ -1,0 +1,11 @@
+digraph "_Project.Scripts.Calculator.View.ResizableYContainer.OnSizeChanged"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="_Project.Scripts.Calculator.\lView.ResizableYContainer.OnSize\lChanged",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Метод для обновления размера RectTransform текущего объекта"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="_Project.Scripts.Calculator.\lView.ResizableYContainer.Update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_calculator_1_1_view_1_1_resizable_y_container.html#a127e55253bf51de1fa91e7111edd7dc7",tooltip="Метод для считывания изменений размера целевого RectTransform."];
+}

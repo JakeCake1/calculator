@@ -1,0 +1,13 @@
+digraph "_Project.Scripts.Maths.Command.MathCommand.Execute"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="_Project.Scripts.Maths.Command.\lMathCommand.Execute",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Метод выполнения вычисления"];
+  Node1 -> Node2 [id="edge3_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="_Project.Scripts.Maths.Strategy.\lCommandExecutionStrategy.ExecuteMath\lCommand",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy.html#a9d42b1acf20864dd62f8efc1e69c03f0",tooltip="Метод выполнения математичесой команды"];
+  Node2 -> Node3 [id="edge4_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="_Project.Scripts.Maths.Strategy.\lCommandExecutionStrategy.TrySolveExpression",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_command_execution_strategy.html#ad40338fb708657e3563cb78603525c93",tooltip="Метод запуска математических вычислений"];
+}

@@ -1,0 +1,116 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+ICalculator\+Model Interface Reference}
+\hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model}{}\label{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model}\index{\_Project.Scripts.Calculator.Model.ICalculatorModel@{\_Project.Scripts.Calculator.Model.ICalculatorModel}}
+
+
+Интерфейс, описывающий модель данных и состояния калькулятора  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+ICalculator\+Model\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_a078708ea4d1af4370286f7334d560c67}{Init}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_view_1_1_i_calculator_main_view}{ICalculator\+Main\+View}} calculator\+Main\+View)
+\begin{DoxyCompactList}\small\item\em Метод инициализации модели \end{DoxyCompactList}\item 
+\Hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_ad4fa0246bb232f52b2121a5c4fcdecf9}\label{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_ad4fa0246bb232f52b2121a5c4fcdecf9} 
+void {\bfseries Update\+State} ()
+\begin{DoxyCompactList}\small\item\em Метод обновления UI калькулятора \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_adc21c9454920aa11f3d472b2e6a83c87}{Add\+Solution}} (\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}} solution)
+\begin{DoxyCompactList}\small\item\em Метод добавления решения в историю \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_a537d0d9174ffa4eedbb0841026122342}{Add\+Error\+Solution}} (string expression)
+\begin{DoxyCompactList}\small\item\em Метод добавления ошибочного решения в историю \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_a16c125822f88a8ede9fd54362d697b82}{Set\+Input\+Expression}} (string expression)
+\begin{DoxyCompactList}\small\item\em Метод записи в модель данных из строки ввода \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Интерфейс, описывающий модель данных и состояния калькулятора 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_a537d0d9174ffa4eedbb0841026122342}\index{\_Project.Scripts.Calculator.Model.ICalculatorModel@{\_Project.Scripts.Calculator.Model.ICalculatorModel}!AddErrorSolution@{AddErrorSolution}}
+\index{AddErrorSolution@{AddErrorSolution}!\_Project.Scripts.Calculator.Model.ICalculatorModel@{\_Project.Scripts.Calculator.Model.ICalculatorModel}}
+\doxysubsubsection{\texorpdfstring{AddErrorSolution()}{AddErrorSolution()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_a537d0d9174ffa4eedbb0841026122342} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+ICalculator\+Model.\+Add\+Error\+Solution (\begin{DoxyParamCaption}\item[{string}]{expression}{}\end{DoxyParamCaption})}
+
+
+
+Метод добавления ошибочного решения в историю 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Результат попытки выполнить математичскую операцию \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_model_1_1_calculator_model_a612d1241f5cd9917bc2904e78bb4686d}{\+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+Calculator\+Model}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_adc21c9454920aa11f3d472b2e6a83c87}\index{\_Project.Scripts.Calculator.Model.ICalculatorModel@{\_Project.Scripts.Calculator.Model.ICalculatorModel}!AddSolution@{AddSolution}}
+\index{AddSolution@{AddSolution}!\_Project.Scripts.Calculator.Model.ICalculatorModel@{\_Project.Scripts.Calculator.Model.ICalculatorModel}}
+\doxysubsubsection{\texorpdfstring{AddSolution()}{AddSolution()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_adc21c9454920aa11f3d472b2e6a83c87} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+ICalculator\+Model.\+Add\+Solution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}}}]{solution}{}\end{DoxyParamCaption})}
+
+
+
+Метод добавления решения в историю 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & Объект выполненной математической команды \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_model_1_1_calculator_model_a408eacc75adc0a8021bc7509fb981a29}{\+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+Calculator\+Model}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_a078708ea4d1af4370286f7334d560c67}\index{\_Project.Scripts.Calculator.Model.ICalculatorModel@{\_Project.Scripts.Calculator.Model.ICalculatorModel}!Init@{Init}}
+\index{Init@{Init}!\_Project.Scripts.Calculator.Model.ICalculatorModel@{\_Project.Scripts.Calculator.Model.ICalculatorModel}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_a078708ea4d1af4370286f7334d560c67} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+ICalculator\+Model.\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_calculator_1_1_view_1_1_i_calculator_main_view}{ICalculator\+Main\+View}}}]{calculator\+Main\+View}{}\end{DoxyParamCaption})}
+
+
+
+Метод инициализации модели 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calculator\+Main\+View} & \doxylink{namespace___project_1_1_scripts_1_1_calculator_1_1_view}{View} компонент калькулятора \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_model_1_1_calculator_model_a006a51294e60908884d290c379232042}{\+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+Calculator\+Model}}.
+
+\Hypertarget{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_a16c125822f88a8ede9fd54362d697b82}\index{\_Project.Scripts.Calculator.Model.ICalculatorModel@{\_Project.Scripts.Calculator.Model.ICalculatorModel}!SetInputExpression@{SetInputExpression}}
+\index{SetInputExpression@{SetInputExpression}!\_Project.Scripts.Calculator.Model.ICalculatorModel@{\_Project.Scripts.Calculator.Model.ICalculatorModel}}
+\doxysubsubsection{\texorpdfstring{SetInputExpression()}{SetInputExpression()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_calculator_1_1_model_1_1_i_calculator_model_a16c125822f88a8ede9fd54362d697b82} 
+void \+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+ICalculator\+Model.\+Set\+Input\+Expression (\begin{DoxyParamCaption}\item[{string}]{expression}{}\end{DoxyParamCaption})}
+
+
+
+Метод записи в модель данных из строки ввода 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Содержимое строки ввода \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_calculator_1_1_model_1_1_calculator_model_acc625dd15554b120638105a1d82b60dc}{\+\_\+\+Project.\+Scripts.\+Calculator.\+Model.\+Calculator\+Model}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Calculator/\+Model/ICalculator\+Model.\+cs\end{DoxyCompactItemize}

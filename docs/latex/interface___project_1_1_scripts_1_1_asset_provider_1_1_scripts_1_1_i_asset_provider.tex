@@ -1,0 +1,82 @@
+\doxysection{\+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+IAsset\+Provider Interface Reference}
+\hypertarget{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider}{}\label{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider}\index{\_Project.Scripts.AssetProvider.Scripts.IAssetProvider@{\_Project.Scripts.AssetProvider.Scripts.IAssetProvider}}
+
+
+Интерфейс, описывающий методы взаимодействия с поставщиком ресурсов  
+
+
+
+
+Inheritance diagram for \+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+IAsset\+Provider\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Uni\+Task$<$ T $>$ \mbox{\hyperlink{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider_ad0fc892ec65d2aa392d931a5cb538d70}{Load$<$ T $>$}} (string address)
+\begin{DoxyCompactList}\small\item\em Метод загрузки ресурса \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider_ae3bc4aa037ee78d8a34b73969f853f4c}{Release}} (string address)
+\begin{DoxyCompactList}\small\item\em Метод выгрузки ресурса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Интерфейс, описывающий методы взаимодействия с поставщиком ресурсов 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider_ad0fc892ec65d2aa392d931a5cb538d70}\index{\_Project.Scripts.AssetProvider.Scripts.IAssetProvider@{\_Project.Scripts.AssetProvider.Scripts.IAssetProvider}!Load$<$ T $>$@{Load$<$ T $>$}}
+\index{Load$<$ T $>$@{Load$<$ T $>$}!\_Project.Scripts.AssetProvider.Scripts.IAssetProvider@{\_Project.Scripts.AssetProvider.Scripts.IAssetProvider}}
+\doxysubsubsection{\texorpdfstring{Load$<$ T $>$()}{Load< T >()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider_ad0fc892ec65d2aa392d931a5cb538d70} 
+Uni\+Task$<$ T $>$ \+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+IAsset\+Provider.\+Load$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{address}{}\end{DoxyParamCaption})}
+
+
+
+Метод загрузки ресурса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Адресс/путь указывающий на объект ресурса, который нужно загрузить в память \\
+\hline
+{\em T} & -\/ тип ресурса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uni\+Task который можно подождать до завершения процесса загрузки ресурса 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_ae4b8b21fbc9f524bfa08efe33c0e07dd}{\+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+Asset\+Provider}}.
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider_ae3bc4aa037ee78d8a34b73969f853f4c}\index{\_Project.Scripts.AssetProvider.Scripts.IAssetProvider@{\_Project.Scripts.AssetProvider.Scripts.IAssetProvider}!Release@{Release}}
+\index{Release@{Release}!\_Project.Scripts.AssetProvider.Scripts.IAssetProvider@{\_Project.Scripts.AssetProvider.Scripts.IAssetProvider}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily \label{interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider_ae3bc4aa037ee78d8a34b73969f853f4c} 
+void \+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+IAsset\+Provider.\+Release (\begin{DoxyParamCaption}\item[{string}]{address}{}\end{DoxyParamCaption})}
+
+
+
+Метод выгрузки ресурса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Адресс/путь указывающий на объект ресурса, который нужно выгрузить из памяти \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider_a4fd6b542894c875874a3485b76c77cba}{\+\_\+\+Project.\+Scripts.\+Asset\+Provider.\+Scripts.\+Asset\+Provider}}.
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+\_\+\+Project/\+Scripts/\+Asset\+Provider/\+Scripts/IAsset\+Provider.\+cs\end{DoxyCompactItemize}

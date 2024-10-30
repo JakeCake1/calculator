@@ -7,21 +7,27 @@ using VContainer;
 using VContainer.Unity;
 
 namespace _Project.Scripts.Application.StateMachine.States
-{
+{  
+  /// \class ApplicationState
+  /// \brief Класс-состояние, отвечающий за основную логику в приложении
   public sealed class ApplicationState : IApplicationState
   {
+    /// \brief Сервис, вызывающий окно с предупреждением
     private IWarningService _warningService;
+    /// \brief Логика калькулятора
     private ICalculator _calculator;
     
+    /// \brief Объект - глобальная область существования, содержащий регистрацию инъекций сервисов для всего времени жизни приложения
     private readonly ApplicationLifetimeScope _applicationLifetimeScope;
+    /// \brief Объект - область существования, содержащий регистрацию инъекций логики для этого состояния приложения
     private LifetimeScope _applicationScope;
-
+    
+    /// \brief Конструктор состояния
+    /// \param applicationLifetimeScope   Объект - глобальная область существования, содержащий регистрацию инъекций сервисов для всего времени жизни приложения
     public ApplicationState(ApplicationLifetimeScope applicationLifetimeScope) => 
       _applicationLifetimeScope = applicationLifetimeScope;
-
-    public void SetStateMachine(IApplicationStateMachine applicationStateMachine)
-    { }
-
+   
+    /// \brief Метод входа в состояние
     public async void Enter()
     {
       CreateApplicationStateDependencies();
@@ -34,7 +40,8 @@ namespace _Project.Scripts.Application.StateMachine.States
 
       ActivateCalculatorView();
     }
-
+    
+    /// \brief Метод выхода из состояния
     public void Exit()
     {
       _calculator.OnErrorOccurred -= OpenWarningWindow;
@@ -45,16 +52,19 @@ namespace _Project.Scripts.Application.StateMachine.States
       
       CleanupApplicationStateDependencies();
     }
-
+    
+    /// \brief Метод активации UI калькулятора
     private void ActivateCalculatorView() => 
       _calculator.SetActive(true);
-
+    
+    /// \brief Метод открытия окна-предупреждения
     private void OpenWarningWindow()
     {
       _warningService.OpenWindow();
       _calculator.SetActive(false);
     }
-
+    
+    /// \brief Создание и получение зависимостей для данного состояния приложения
     private void CreateApplicationStateDependencies()
     {
       _applicationScope = _applicationLifetimeScope.CreateChild(builder =>
@@ -67,7 +77,8 @@ namespace _Project.Scripts.Application.StateMachine.States
       _warningService = _applicationScope.Container.Resolve<IWarningService>();
       _calculator = _applicationScope.Container.Resolve<ICalculator>();
     }
-
+    
+    /// \brief Вызов очистки зависимостей для данного состояния приложения
     private void CleanupApplicationStateDependencies()
     {
       _applicationScope.Dispose();
