@@ -7,15 +7,14 @@ namespace _Project.Scripts.Application.StateMachine.States
   public sealed class StartupState : IApplicationState
   {
     private readonly ISaveDataService _saveDataService;
+    private readonly IApplicationStateMachine _applicationStateMachine;
 
-    private IApplicationStateMachine _applicationStateMachine;
-
-    public StartupState(ISaveDataService saveDataService) => 
+    public StartupState(ISaveDataService saveDataService, IApplicationStateMachine applicationStateMachine)
+    {
       _saveDataService = saveDataService;
-
-    public void SetStateMachine(IApplicationStateMachine applicationStateMachine) => 
       _applicationStateMachine = applicationStateMachine;
-
+    }
+    
     public void Enter()
     {
       _saveDataService.Load();

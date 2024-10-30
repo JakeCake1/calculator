@@ -19,9 +19,6 @@ namespace _Project.Scripts.Application.StateMachine.States
     public ApplicationState(ApplicationLifetimeScope applicationLifetimeScope) => 
       _applicationLifetimeScope = applicationLifetimeScope;
 
-    public void SetStateMachine(IApplicationStateMachine applicationStateMachine)
-    { }
-
     public async void Enter()
     {
       CreateApplicationStateDependencies();

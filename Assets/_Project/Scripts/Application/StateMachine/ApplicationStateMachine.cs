@@ -35,8 +35,6 @@ namespace _Project.Scripts.Application.StateMachine
       if (!_states.ContainsKey(typeof(TState)))
       {
         TState state = _container.Resolve<TState>();
-        state.SetStateMachine(this);
-        
         _states.Add(typeof(TState), state);
       }
     }

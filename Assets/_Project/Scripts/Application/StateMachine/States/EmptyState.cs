@@ -5,9 +5,6 @@ namespace _Project.Scripts.Application.StateMachine.States
 {
   public sealed class EmptyState : IApplicationState
   {
-    public void SetStateMachine(IApplicationStateMachine applicationStateMachine)
-    { }
-
     public void Enter() => 
       Debug.Log("Enter EmptyState");
 
