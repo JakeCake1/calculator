@@ -6,8 +6,11 @@ using VContainer.Unity;
 
 namespace _Project.Scripts.WarningService
 {
+  /// \class WarningServiceInstaller
+  /// \brief Класс, отвечающий за инъекцию логики сервиса окна-предупреждения в приложение
   public class WarningServiceInstaller : IInstaller
   {
+    /// \brief Метод конфигурации зависимостей сервиса окна-предупреждения
     public void Install(IContainerBuilder builder)
     {
       builder.Register<IWarningServiceModel, WarningServiceModel>(Lifetime.Scoped);
