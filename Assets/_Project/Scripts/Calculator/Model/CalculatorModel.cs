@@ -70,7 +70,7 @@ namespace _Project.Scripts.Calculator.Model
     /// \param expression    Результат попытки выполнить математичскую операцию
     public void AddErrorSolution(string expression)
     {
-      _history.Push($"{expression}=Error");
+      _history.Push($"{expression}=ERROR");
       UpdateHistory();
     }
     
