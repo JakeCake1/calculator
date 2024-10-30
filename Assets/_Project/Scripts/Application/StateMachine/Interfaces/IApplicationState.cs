@@ -1,7 +1,7 @@
 ﻿namespace _Project.Scripts.Application.StateMachine.Interfaces
 {
-  /// \interface IApplicationState
-  /// \brief Интерфейс, описывающий основное состояние приложения
+  /// \interface IApplicationExitableState
+  /// \brief Интерфейс, описывающий выход из состояния приложения
   public interface IApplicationExitableState
   {
     /// \brief Метод выхода из состояния
