@@ -5,18 +5,28 @@ using UnityEngine;
 
 namespace _Project.Scripts.SaveDataService.Collections
 {
+  /// \class PersistentStack
+  /// \brief Класс-стек, коллекция с сохранением значений между сессиями
   public sealed class PersistentStack<T>
-  {
+  { 
+    /// \brief Сервис для сохранения данных
     private readonly ISaveDataService _saveDataService;
-
+    
+    /// \brief Флаг инициализации коллекции
     private bool _isInitialized;
+    /// \brief Ключ для сохранения коллекции
     private string _key;
 
+    /// \brief Максимальная вместительность коллекции
     private int _maxCapacity = int.MaxValue;
+    /// \brief Базовая коллекция-стек
     private Stack<T> _stack;
-
+    
+    /// \brief Ключ файла для сохранения
     private string _subFile;
 
+    /// \brief Конструктор стека
+    /// \param saveDataService   Сервис для сохранения данных
     public PersistentStack(ISaveDataService saveDataService)
     {
       if (!(typeof(T) == typeof(int) || typeof(T) == typeof(float) || typeof(T) == typeof(bool) || typeof(T) == typeof(string)))
@@ -27,13 +37,19 @@ namespace _Project.Scripts.SaveDataService.Collections
 
       _saveDataService = saveDataService;
     }
-
+    
+    /// \brief Деструктор стека
     ~PersistentStack() => 
       _isInitialized = false;
 
+    /// \brief Метод настройки максимальной вместимости стека
+    /// \param maxCapacity   Максимальная вместимость стека
     public void SetMaxCapacity(int maxCapacity) => 
       _maxCapacity = maxCapacity;
-
+    
+    /// \brief Метод загрузки коллекции
+    /// \param subFile   Ключ файла для сохранения
+    /// \param key   Ключ для сохранения коллекции
     public void Load(string subFile, string key)
     {
       _subFile = subFile;
@@ -46,7 +62,9 @@ namespace _Project.Scripts.SaveDataService.Collections
       
       _isInitialized = true;
     }
-
+    
+    /// \brief Метод вставки в стек
+    /// \param obj   Значение для вставки
     public void Push(T obj)
     {
       if (IsInitialized())
@@ -61,7 +79,9 @@ namespace _Project.Scripts.SaveDataService.Collections
       _stack.Push(obj);
       WriteStack();
     }
-
+    
+    /// \brief Метод удаления из стека
+    /// \return Удаленное значение
     public T Pop()
     {
       if (IsInitialized())
@@ -72,7 +92,8 @@ namespace _Project.Scripts.SaveDataService.Collections
 
       return pop;
     }
-
+    
+    /// \brief Метод очистки стека
     public void Clear()
     {
       if (IsInitialized())
@@ -81,7 +102,9 @@ namespace _Project.Scripts.SaveDataService.Collections
       _stack.Clear();
       WriteStack();
     }
-
+    
+    /// \brief Метод взятия значения из стека
+    /// \return Значение из стека
     public T Peek()
     {
       if (IsInitialized())
@@ -89,7 +112,9 @@ namespace _Project.Scripts.SaveDataService.Collections
 
       return _stack.Peek();
     }
-
+    
+    /// \brief Метод получения количества значений в стеке
+    /// \return Количестов значений в стеке
     public int Count()
     {
       if (IsInitialized())
@@ -98,6 +123,8 @@ namespace _Project.Scripts.SaveDataService.Collections
       return _stack.Count;
     }
 
+    /// \brief Метод получения массива значений из стека
+    /// \return Массив значений
     public T[] ToArray()
     {
       if (IsInitialized())
@@ -105,7 +132,9 @@ namespace _Project.Scripts.SaveDataService.Collections
 
       return _stack.ToArray();
     }
-
+    
+    /// \brief Метод получения флага инициализации
+    /// \return Флаг инициализации
     private bool IsInitialized()
     {
       if (!_isInitialized)
@@ -116,7 +145,8 @@ namespace _Project.Scripts.SaveDataService.Collections
 
       return false;
     }
-
+    
+    /// \brief Метод записи значений в стек
     private void WriteStack()
     {
       string json = JsonConvert.SerializeObject(_stack);
@@ -124,7 +154,9 @@ namespace _Project.Scripts.SaveDataService.Collections
       _saveDataService.Save(_subFile, _key, json);
       _saveDataService.Write();
     }
-
+    
+    /// \brief Метод для переворачивания порядка значений в стеке
+    /// \param stack   Базовый стек
     private void Reverse(Stack<T> stack)
     {
       T[] list = new T[stack.Count];

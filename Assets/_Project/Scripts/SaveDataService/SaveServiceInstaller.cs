@@ -4,9 +4,12 @@ using VContainer;
 using VContainer.Unity;
 
 namespace _Project.Scripts.SaveDataService
-{
+{  
+  /// \class SaveServiceInstaller
+  /// \brief Класс отвечающий за инъекцию SaveDataService в приложение
   public class SaveServiceInstaller : IInstaller
   {
+    /// \brief Метод конфигурации зависимостей SaveDataService
     public void Install(IContainerBuilder builder)
     {
       builder.Register<IDataLoader, DataLoader>(Lifetime.Singleton);
