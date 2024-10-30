@@ -27,13 +27,13 @@ namespace Tests
       Object.DestroyImmediate(_lifetimeScope.gameObject);
 
     [TestCase("5+5", "5+5=10")]
-    [TestCase("10+10.0", "10+10.0=Error")]
+    [TestCase("10+10.0", "10+10.0=ERROR")]
     [TestCase("8+154", "8+154=162")]
-    [TestCase("5+5=", "5+5==Error")]
-    [TestCase("-5+5", "-5+5=Error")]
-    [TestCase("-5", "-5=Error")]
-    [TestCase("3/3", "3/3=Error")]
-    [TestCase("544564564646456456456456+456456456564566465646456456456455645", "544564564646456456456456+456456456564566465646456456456455645=Error")]
+    [TestCase("5+5=", "5+5==ERROR")]
+    [TestCase("-5+5", "-5+5=ERROR")]
+    [TestCase("-5", "-5=ERROR")]
+    [TestCase("3/3", "3/3=ERROR")]
+    [TestCase("544564564646456456456456+456456456564566465646456456456455645", "544564564646456456456456+456456456564566465646456456456455645=ERROR")]
     public void TestExpressions(string input, string answer)
     {
       var maths = _lifetimeScope.Container.Resolve<IMaths>();
@@ -42,7 +42,7 @@ namespace Tests
       if (maths.TryExecuteExpression(input, out MathCommand mathCommand))
         result = mathCommand.GetResult();
       else
-        result = input + "=Error";
+        result = input + "=ERROR";
       
       Assert.AreEqual(result, answer);
     }
