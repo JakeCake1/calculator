@@ -5,14 +5,24 @@ using UnityEngine;
 
 namespace _Project.Scripts.UIFactory
 {
+  /// \class UIObjectFactory
+  /// \brief Универсальный класс-фабрика для создания UI объектов
   public abstract class UIObjectFactory
   {
+    /// \brief Поставщик ресурсов
     private readonly IAssetProvider _assetProvider;
+    /// \brief Коллекция идентификаторов созданных объектов
     private readonly Dictionary<string, int> _cachedObjects = new();
     
+    /// \brief Конструктор фабрики
+    /// \param assetProvider    Поставщик ресурсов
     protected UIObjectFactory(IAssetProvider assetProvider) =>
       _assetProvider = assetProvider;
 
+    /// \brief Метод создания объекта, где Т - класс создаваемого объекта, переданный параметрически
+    /// \param address    Адрес создаваемого объекта
+    /// \param parent    Родительский объект, в который будет помещен новый объект
+    /// \return UniTask который можно подождать до завершения процесса создания объекта
     protected async UniTask<T> CreateUIObject<T>(string address, Transform parent = null)
     {     
       if (_cachedObjects.ContainsKey(address) && _cachedObjects[address] == -1)
@@ -30,7 +40,10 @@ namespace _Project.Scripts.UIFactory
       
       return obj;
     }
-
+    
+    /// \brief Метод уничтожения объекта
+    /// \param address    Адрес уничтожаемого объекта
+    /// \param component    Компонент, объект которого будет уничтожен
     protected void Clean(Component component, string address = null)
     {
       if (component == null)
