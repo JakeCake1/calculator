@@ -7,6 +7,8 @@ using VContainer.Unity;
 
 namespace _Project.Scripts.Application.ContainerMediator
 {
+  /// \class DependenciesContainer
+  /// \brief Класс-посредник, связывающий логику приложения и DI Container
   public class DependenciesContainer : IDependenciesContainer
   {
     /// \brief Объект - глобальная область существования, содержащий регистрацию инъекций сервисов для всего времени жизни приложения
@@ -19,7 +21,7 @@ namespace _Project.Scripts.Application.ContainerMediator
     public DependenciesContainer(ApplicationLifetimeScope applicationLifetimeScope) => 
       _applicationLifetimeScope = applicationLifetimeScope;
 
-    /// \brief Создание и получение зависимостей для данного состояния приложения
+    /// \brief Создание и получение зависимостей для главного состояния приложения
     public void CreateApplicationStateDependencies(out IWarningService warningService, out ICalculator calculator)
     {
       _applicationScope = _applicationLifetimeScope.CreateChild(builder =>
@@ -33,7 +35,7 @@ namespace _Project.Scripts.Application.ContainerMediator
       calculator = _applicationScope.Container.Resolve<ICalculator>();
     }
     
-    /// \brief Вызов очистки зависимостей для данного состояния приложения
+    /// \brief Вызов очистки зависимостей для главного состояния приложения
     public void CleanupApplicationStateDependencies()
     {
       _applicationScope.Dispose();

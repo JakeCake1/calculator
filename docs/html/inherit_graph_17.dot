@@ -5,7 +5,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="_Project.Scripts.Maths.IMaths",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_maths_1_1_i_maths.html",tooltip="Интерфейс, отвечающий за взаимодействие с логикой математических вычислений"];
+  Node0 [id="Node000000",label="_Project.Scripts.Maths.Factory.\lIExpressionFactory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_maths_1_1_factory_1_1_i_expression_factory.html",tooltip="Интерфейс фабрики, отвечающий за создание математических выражений"];
   Node0 -> Node1 [id="edge17_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 [id="Node000001",label="_Project.Scripts.Maths.Maths",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_maths_1_1_maths.html",tooltip="Класс, отвечающий за взаимодействие с логикой математических вычислений"];
+  Node1 [id="Node000001",label="_Project.Scripts.Maths.Factory.\lExpressionFactory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_maths_1_1_factory_1_1_expression_factory.html",tooltip="Класс, отвечающий за создание математических выражений"];
 }
