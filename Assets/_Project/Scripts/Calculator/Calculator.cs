@@ -42,10 +42,10 @@ namespace _Project.Scripts.Calculator
     public async UniTask Initialize()
     {
       _calculatorMainView = await _calculatorUIFactory.CreateCalculatorMainView();
-      _calculatorModel.Init(_calculatorMainView);
+      _calculatorModel.Init(_calculatorPresenter);
       _calculatorMainView.Init(_calculatorPresenter);
       
-      _calculatorPresenter.Init(OnErrorOccurred);
+      _calculatorPresenter.Init(_calculatorMainView, OnErrorOccurred);
       _calculatorPresenter.UpdateState();
     }
     

@@ -1,4 +1,4 @@
-using _Project.Scripts.Calculator.View;
+using _Project.Scripts.Calculator.Presenter;
 using _Project.Scripts.Maths.Command;
 
 namespace _Project.Scripts.Calculator.Model
@@ -8,8 +8,8 @@ namespace _Project.Scripts.Calculator.Model
   public interface ICalculatorModel
   {
     /// \brief Метод инициализации модели
-    /// \param calculatorMainView    View компонент калькулятора
-    void Init(ICalculatorMainView calculatorMainView);
+    /// \param calculatorPresenter    Презентер объкт калькулятора
+    void Init(ICalculatorPresenter calculatorPresenter);
     /// \brief Метод обновления UI калькулятора
     void UpdateState();
     /// \brief Метод добавления решения в историю
