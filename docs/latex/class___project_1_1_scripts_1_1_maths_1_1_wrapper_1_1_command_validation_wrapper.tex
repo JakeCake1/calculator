@@ -17,7 +17,7 @@ Collaboration diagram for \+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+Command\
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_af20b8ae04518b8ba35221843d7be2f14}{Command\+Validation\+Wrapper}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy}{ICommand\+Execution\+Strategy}} command\+Execution\+Strategy)
+\mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_a3ca27e644ae92bad5248792334f3dada}{Command\+Validation\+Wrapper}} (\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy}{ICommand\+Execution\+Strategy}} command\+Execution\+Strategy, \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}} available\+Math\+Commands)
 \begin{DoxyCompactList}\small\item\em Конструктор обертки проверки \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_a92c6852b0e952362b13677eee2f3d0d6}{Try\+Execute\+Expression}} (string expression, out \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command}{Math\+Command}} command)
 \begin{DoxyCompactList}\small\item\em Метод запуска математических вычислений \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -27,7 +27,10 @@ bool \mbox{\hyperlink{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_comm
 \item 
 \Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_ac2bf536c9609a0bc7545dc38c585d90d}\label{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_ac2bf536c9609a0bc7545dc38c585d90d} 
 readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy}{ICommand\+Execution\+Strategy}} {\bfseries \+\_\+command\+Execution\+Strategy}
-\begin{DoxyCompactList}\small\item\em Объект, выполняющий вычисление по алгоритму \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Объект, выполняющий вычисление по алгоритму \end{DoxyCompactList}\item 
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_a2b7a1c46387e740099aa79724b113f9a}\label{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_a2b7a1c46387e740099aa79724b113f9a} 
+readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}} {\bfseries \+\_\+available\+Math\+Commands}
+\begin{DoxyCompactList}\small\item\em Коллекция доступных математических команд \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -35,11 +38,11 @@ readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_af20b8ae04518b8ba35221843d7be2f14}\index{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper@{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper}!CommandValidationWrapper@{CommandValidationWrapper}}
+\Hypertarget{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_a3ca27e644ae92bad5248792334f3dada}\index{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper@{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper}!CommandValidationWrapper@{CommandValidationWrapper}}
 \index{CommandValidationWrapper@{CommandValidationWrapper}!\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper@{\_Project.Scripts.Maths.Wrapper.CommandValidationWrapper}}
 \doxysubsubsection{\texorpdfstring{CommandValidationWrapper()}{CommandValidationWrapper()}}
-{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_af20b8ae04518b8ba35221843d7be2f14} 
-\+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+Command\+Validation\+Wrapper.\+Command\+Validation\+Wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy}{ICommand\+Execution\+Strategy}}}]{command\+Execution\+Strategy}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class___project_1_1_scripts_1_1_maths_1_1_wrapper_1_1_command_validation_wrapper_a3ca27e644ae92bad5248792334f3dada} 
+\+\_\+\+Project.\+Scripts.\+Maths.\+Wrapper.\+Command\+Validation\+Wrapper.\+Command\+Validation\+Wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy}{ICommand\+Execution\+Strategy}}}]{command\+Execution\+Strategy}{, }\item[{\mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands}{IAvailable\+Math\+Commands}}}]{available\+Math\+Commands}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -48,6 +51,8 @@ readonly \mbox{\hyperlink{interface___project_1_1_scripts_1_1_maths_1_1_strategy
 
 \begin{DoxyParams}{Parameters}
 {\em command\+Execution\+Strategy} & Объект, выполняющий вычисление по алгоритму \\
+\hline
+{\em available\+Math\+Commands} & Коллекция доступных математических команд \\
 \hline
 \end{DoxyParams}
 

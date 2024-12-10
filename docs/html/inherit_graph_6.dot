@@ -5,5 +5,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="_Project.Scripts.Calculator.\lCalculatorInstaller",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_calculator_1_1_calculator_installer.html",tooltip="Класс, отвечающий за инъекцию логики калькулятора в приложение"];
+  Node0 [id="Node000000",label="_Project.Scripts.AssetProvider.\lScripts.IAssetProvider",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_i_asset_provider.html",tooltip="Интерфейс, описывающий методы взаимодействия с поставщиком ресурсов"];
+  Node0 -> Node1 [id="edge7_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="_Project.Scripts.AssetProvider.\lScripts.AssetProvider",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class___project_1_1_scripts_1_1_asset_provider_1_1_scripts_1_1_asset_provider.html",tooltip="Класс поставщик ресурсов"];
 }

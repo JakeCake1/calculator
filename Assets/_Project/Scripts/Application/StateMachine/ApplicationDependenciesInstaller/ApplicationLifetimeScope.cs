@@ -1,3 +1,4 @@
+using _Project.Scripts.Application.ContainerMediator;
 using _Project.Scripts.Application.StateMachine.Interfaces;
 using _Project.Scripts.Application.StateMachine.States;
 using _Project.Scripts.AssetProvider;
@@ -13,7 +14,9 @@ namespace _Project.Scripts.Application.StateMachine.ApplicationDependenciesInsta
   {  
     /// \brief Метод конфигурации зависимостей сервисов
     protected override void Configure(IContainerBuilder builder)
-    {    
+    {
+      builder.Register<IDependenciesContainer, DependenciesContainer>(Lifetime.Singleton);
+      
       new AssetProviderInstaller().Install(builder);
       new SaveServiceInstaller().Install(builder);
       

@@ -1,4 +1,4 @@
-using _Project.Scripts.Calculator.View;
+using _Project.Scripts.Calculator.Presenter;
 using _Project.Scripts.Maths.Command;
 using _Project.Scripts.SaveDataService.Collections;
 using _Project.Scripts.SaveDataService.Interfaces;
@@ -24,11 +24,12 @@ namespace _Project.Scripts.Calculator.Model
     /// \brief Сервис для сохранения данных между сессиями
     private readonly ISaveDataService _saveDataService;
     
-    /// \brief View объект UI калькулятора
-    private ICalculatorMainView _calculatorMainView;
+    /// \brief Презентер объкт калькулятора
+    private ICalculatorPresenter _calculatorPresenter;
     /// \brief Выражение введенное в строку ввода
     private string _inputExpression;
-    
+
+
     /// \brief Конструктор модели
     /// \param saveDataService   Сервис для сохранения данных между сессиями
     public CalculatorModel(ISaveDataService saveDataService)
@@ -42,17 +43,17 @@ namespace _Project.Scripts.Calculator.Model
     }
     
     /// \brief Метод инициализации модели
-    /// \param calculatorMainView    View компонент калькулятора
-    public void Init(ICalculatorMainView calculatorMainView) => 
-      _calculatorMainView = calculatorMainView;
-    
+    /// \param calculatorPresenter    Презентер объкт калькулятора
+    public void Init(ICalculatorPresenter calculatorPresenter) => 
+      _calculatorPresenter = calculatorPresenter;
+
     /// \brief Метод обновления UI калькулятора
     public void UpdateState()
     {
       _inputExpression = _saveDataService.Get<string>(SubFileKey, CommandInputKey);
 
       UpdateHistory();
-      _calculatorMainView.SetInputExpression(_inputExpression);
+      _calculatorPresenter.UpdateInputExpression(_inputExpression);
     }
     
     /// \brief Метод добавления решения в историю
@@ -88,7 +89,7 @@ namespace _Project.Scripts.Calculator.Model
     private void UpdateHistory()
     {
       string[] mathCommands = _history.ToArray();
-      _calculatorMainView.SetHistory(mathCommands);
+      _calculatorPresenter.UpdateHistory(mathCommands);
     }
   }
 }

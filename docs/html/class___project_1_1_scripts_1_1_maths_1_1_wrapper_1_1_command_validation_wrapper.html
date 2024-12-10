@@ -112,9 +112,9 @@ Collaboration diagram for _Project.Scripts.Maths.Wrapper.CommandValidationWrappe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af20b8ae04518b8ba35221843d7be2f14" id="r_af20b8ae04518b8ba35221843d7be2f14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af20b8ae04518b8ba35221843d7be2f14">CommandValidationWrapper</a> (<a class="el" href="interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy.html">ICommandExecutionStrategy</a> commandExecutionStrategy)</td></tr>
-<tr class="memdesc:af20b8ae04518b8ba35221843d7be2f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор обертки проверки  <br /></td></tr>
-<tr class="separator:af20b8ae04518b8ba35221843d7be2f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca27e644ae92bad5248792334f3dada" id="r_a3ca27e644ae92bad5248792334f3dada"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ca27e644ae92bad5248792334f3dada">CommandValidationWrapper</a> (<a class="el" href="interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy.html">ICommandExecutionStrategy</a> commandExecutionStrategy, <a class="el" href="interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands.html">IAvailableMathCommands</a> availableMathCommands)</td></tr>
+<tr class="memdesc:a3ca27e644ae92bad5248792334f3dada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор обертки проверки  <br /></td></tr>
+<tr class="separator:a3ca27e644ae92bad5248792334f3dada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92c6852b0e952362b13677eee2f3d0d6" id="r_a92c6852b0e952362b13677eee2f3d0d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92c6852b0e952362b13677eee2f3d0d6">TryExecuteExpression</a> (string expression, out <a class="el" href="class___project_1_1_scripts_1_1_maths_1_1_command_1_1_math_command.html">MathCommand</a> command)</td></tr>
 <tr class="memdesc:a92c6852b0e952362b13677eee2f3d0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод запуска математических вычислений  <br /></td></tr>
 <tr class="separator:a92c6852b0e952362b13677eee2f3d0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,30 +126,47 @@ Private Attributes</h2></td></tr>
 readonly <a class="el" href="interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy.html">ICommandExecutionStrategy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_commandExecutionStrategy</b></td></tr>
 <tr class="memdesc:ac2bf536c9609a0bc7545dc38c585d90d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект, выполняющий вычисление по алгоритму <br /></td></tr>
 <tr class="separator:ac2bf536c9609a0bc7545dc38c585d90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7a1c46387e740099aa79724b113f9a" id="r_a2b7a1c46387e740099aa79724b113f9a"><td class="memItemLeft" align="right" valign="top"><a id="a2b7a1c46387e740099aa79724b113f9a" name="a2b7a1c46387e740099aa79724b113f9a"></a>
+readonly <a class="el" href="interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands.html">IAvailableMathCommands</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_availableMathCommands</b></td></tr>
+<tr class="memdesc:a2b7a1c46387e740099aa79724b113f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коллекция доступных математических команд <br /></td></tr>
+<tr class="separator:a2b7a1c46387e740099aa79724b113f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Класс, отвечающий за первичную проверку введенных выражений на корректность <br  />
  </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af20b8ae04518b8ba35221843d7be2f14" name="af20b8ae04518b8ba35221843d7be2f14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af20b8ae04518b8ba35221843d7be2f14">&#9670;&#160;</a></span>CommandValidationWrapper()</h2>
+<a id="a3ca27e644ae92bad5248792334f3dada" name="a3ca27e644ae92bad5248792334f3dada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca27e644ae92bad5248792334f3dada">&#9670;&#160;</a></span>CommandValidationWrapper()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">_Project.Scripts.Maths.Wrapper.CommandValidationWrapper.CommandValidationWrapper </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy.html">ICommandExecutionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>commandExecutionStrategy</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="interface___project_1_1_scripts_1_1_maths_1_1_strategy_1_1_i_command_execution_strategy.html">ICommandExecutionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>commandExecutionStrategy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="interface___project_1_1_scripts_1_1_maths_1_1_data_1_1_i_available_math_commands.html">IAvailableMathCommands</a></td>          <td class="paramname"><span class="paramname"><em>availableMathCommands</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Конструктор обертки проверки </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">commandExecutionStrategy</td><td>Объект, выполняющий вычисление по алгоритму </td></tr>
+    <tr><td class="paramname">availableMathCommands</td><td>Коллекция доступных математических команд </td></tr>
   </table>
   </dd>
 </dl>
